@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: Что такое «Фронтир»?
 permalink: /about/
 ---
+О нас лучше всего расскажут наши статьи, но если вы хотите краткую выжимку, то мы пишем о:
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+* вёрстке. HTML5, CSS3, почему &lt;br> — это всё равно, что расписаться в своей неуклюжести, а &lt;img> всегда кидает запрос на сервер;
+* яваскрипте. Backbone.js, фронтенд-шаблоны, почему onclick = "displayMyAwesomeness()" не показывает крутость и как не заблудиться в лабиринтах коллбэков;
+* общих принципах. Почему люди плохие и как с этим жить, почему люди хорошие и как с этим жить;
+* инструментах и сервисах. Упрощаем жизнь всем вокруг.
