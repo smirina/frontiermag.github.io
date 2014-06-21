@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  vertical-align: top;
 }
 
 html, body { height: 100%; }
@@ -56,24 +57,57 @@ a:visited { color: #205caa; }
 }
 
 
-.home h1 {
+.main-header {
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
-.post-link { font-size: 1.4rem; margin-top: -0.8rem; display: inline-block;}
-.post-short { font-size: 1.1rem; }
+.tag { font-variant: small-caps;}
+
+.post-header { display: block; font-size: 1.4rem; line-height: 1.3rem; margin-top: -0.3rem;}
+.post-short { margin-top: 0.2rem; font-size: 1.1rem; line-height: 1.3rem;}
 
 
-.home ul {
+
+.main-posts {
   list-style: none;
   vertical-align: top;
+  margin-bottom: 2rem;
+}
+
+.main-post {
   margin-bottom: 2rem;
 }
 
 .post-header h1 {
   margin-top: -0.8rem;
   font-size: 1.4rem;
+}
+
+.post header {
+  margin-bottom: 1rem;
+}
+.post p {
+  margin-bottom: 1rem;
+}
+
+.post .permalink {
+  text-decoration: none;
+  color: lightgray;
+}
+.post .permalink:hover {
+  color: gray;
+}
+
+.back {
+  display: block;
+  border-top: 1px solid lightgray;
+  width: 100%;
+}
+.back:before {
+  content: '↜';
+  margin-right: 0.3rem;
+  display: inline-block;
 }
 
 /* Syntax highlighting styles */
@@ -151,16 +185,9 @@ a:visited { color: #205caa; }
     height: 15rem;   
   }
 
-  .home h1 {
-    font-size: 2rem;
-  }
   .page-content {
     width: 40rem;
     margin-top: 3rem;
-  }
-
-  .post-header h1 {
-    font-size: 2rem;
   }
 }
 

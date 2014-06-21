@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Как выглядит непрофессионализм"
+short: "Объяснение в картинках"
+tag: "hate"
+published: false
+---
+Привет.

@@ -1,21 +1,13 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1>Последние статьи «Фронтира»</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        {% if post.tag %}<div class="post-header-tag">{{post.tag}}</div>{% endif %}
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <p>{{post.short}}</p>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">У нас есть <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a> и <a href="https://vk.com/frontiermag">паблик</a> в ВК.</p>
-
-</div>
+<ul class="main-posts">
+  {% for post in site.posts %}
+    <li class="main-post">
+      {% if post.tag %}<div class="tag" rel="tag">{{post.tag}}</div>{% endif %}
+      <a class="post-header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <p class="post-short">{{post.short}}</p>
+    </li>
+  {% endfor %}
+</ul>
+<p class="main-subscribe">У нас есть <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a> и <a href="https://vk.com/frontiermag">паблик</a> в ВК.</p>
