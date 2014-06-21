@@ -3,7 +3,7 @@ title: Фронтир
 email: marinintim@gmail.com
 description: "Журнал про фронтенд-разработку, её будни и праздники."
 baseurl: ""
-url: "http://localhost:4000"
+url: "http://frontiermag.ru"
 
 # Build settings
 markdown: kramdown
