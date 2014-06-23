@@ -91,8 +91,8 @@ a:visited { color: #205caa; }
   margin-bottom: 1rem;
 }
 
-.post h2 { font-size: 1.3rem; }
-.post h3 { font-size: 1.2rem; }
+.post h2 { font-size: 1.3rem; margin-bottom: 0.5rem;}
+.post h3 { font-size: 1.2rem; margin-bottom: 0.3rem;}
 .post blockquote { margin-left: 0.5rem; }
 
 .post .permalink {
