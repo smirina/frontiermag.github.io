@@ -48,6 +48,7 @@ a:visited { color: #205caa; }
 .page-content {
   display: inline-block;
   margin-left: 2rem;
+  width: 17rem;
   vertical-align: top;
 }
 
