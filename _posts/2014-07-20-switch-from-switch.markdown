@@ -3,7 +3,7 @@ layout: post
 title: Замена switch простыми объектами
 tag: javascript
 short: Тодд Мотто предлагает отказаться от оператора switch, заменив его простыми объектами.
-published: false
+published: true
 ---
 
 Во многих языках программирования существует оператор `switch` -- но должен ли он существовать и дальше?
@@ -318,5 +318,8 @@ console.log(snack); // 'Drink'
 
 ### Подводя итоги
 
-Литералы объектов 
-Object literals are a more natural control of flow in JavaScript, `switch` is a bit old and clunky and prone to difficult debugging errors. Object's are more extensible, maintainable, and we can test them a lot better. They're also part of a design pattern and very commonly used day to day in other programming tasks. Object literals can contain functions as well as any other [Object type](//toddmotto.com/understanding-javascript-types-and-reliable-type-checking), which makes them really flexible! Each function in the literal has function scope too, so we can return the closure from the parent function we invoke (in this case `getDrink` returns the closure);
+Литералы объектов лучше вписываются в поток Javascript, `switch` староват и неуклюж, к тому же легко создаёт сложности в дебаггинге. Объекты расширяемы, их легко поддерживать и гораздо проще тестировать. Объекты используются изо дня в день и к ним применимы паттерны проектирования. В них могут содержаться как функции, так и любой другой [тип объектов](//toddmotto.com/understanding-javascript-types-and-reliable-type-checking), что делает их очень гибкими. Каждая функция внутри литерала обладает функциональной областью видимости, так что мы может вернуть замыкание от родительской функции (в нашем случае `getDrink` возвращает замыкание);
+
+
+
+[Оригинал](http://toddmotto.com/deprecating-the-switch-statement-for-object-literals/?utm_source=frontier&utm_medium=site)
