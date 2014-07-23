@@ -324,4 +324,4 @@ console.log(snack); // 'Drink'
 
 [Оригинал](http://toddmotto.com/deprecating-the-switch-statement-for-object-literals/?utm_source=frontier&utm_medium=site)
 
-**По сути, это просто применение паттерна *Стратегия*. ([@random_wind](//twitter.com/random_wind)**
+**По сути, это просто применение паттерна *Стратегия*. ([@random_wind](//twitter.com/random_wind))**
