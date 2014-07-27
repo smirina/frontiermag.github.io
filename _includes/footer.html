@@ -1,3 +1,16 @@
 <footer class="site-footer">
-Всем привет в этом чате.
+Здесь должны быть рандомные надписи.
 </footer>
+
+<div class="jsonp-wrapper"></div>
+<script src="//underscorejs.org/underscore.js"></script>
+<script type="text/template" class="templates-comment">
+  <li style="list-style-image: url(<%= user.photo_50 %>)">
+    <a href="//vk.com/<%= user.screen_name %>" class="comment-name">
+      <%= user.first_name %> <%= user.last_name %>
+    </a>
+    <span class="comment-text"><%= comment.text %></span>
+  </li>
+</script>
+<script src="/scripts/vk-comments.js"></script>
+{% if page.vkid %}<script defer>VK.getComments({{page.vkid}})</script>{% endif %}

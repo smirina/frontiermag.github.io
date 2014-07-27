@@ -4,6 +4,7 @@ title: Email-first
 tag: стартапы
 short: Райан Хувер пропагандирует начинать стартап с писем.
 published: true
+vkid: 26
 ---
 Web-first, mobile-first, tablet-first, и так далее, и так далее. 
 

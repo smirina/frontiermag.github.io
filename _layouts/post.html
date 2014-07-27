@@ -10,4 +10,13 @@ layout: default
   {{ content }} 
 </article>
 
+{% if page.vkid %}
+<section class="comments">
+  <h2>
+    Комментарии <a href="https://vk.com/frontiermag?w=wall-73044877_{{page.vkid}}">к этому посту</a> в нашем сообществе ВК
+  </h2>
+  <ol class="comments-list"></ol>
+</section>
+{% endif %}
+
 <a class="back" href="{{site.url}}">к списку статей</a>

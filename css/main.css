@@ -5,9 +5,10 @@
   margin: 0;
   padding: 0;
   vertical-align: top;
+  box-sizing: inherit;
 }
 
-html, body { height: 100%; }
+html, body { height: 100%; box-sizing: border-box; }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
@@ -48,7 +49,7 @@ a:visited { color: #205caa; }
 .page-content {
   display: inline-block;
   margin-left: 2rem;
-  width: 17rem;
+  width: calc(100% - 4rem);
   vertical-align: top;
 }
 
@@ -81,21 +82,53 @@ a:visited { color: #205caa; }
   margin-bottom: 2rem;
 }
 
-.post-header h1 {
-  margin-top: -0.8rem;
-  font-size: 1.4rem;
+.post-header {
+  margin-top: -0.3rem;
+  line-height: 3rem;
+  font-size: 3rem;
+  margin-left: -.4rem;
 }
 
 .post header {
   margin-bottom: 1rem;
+  border-bottom: 1px dashed #444;
 }
 .post p {
   margin-bottom: 1rem;
 }
 
+.post strong {
+  font-weight: 700;
+}
+
 .post h2 { font-size: 1.3rem; margin-bottom: 0.5rem;}
 .post h3 { font-size: 1.2rem; margin-bottom: 0.3rem;}
 .post blockquote { margin-left: 0.5rem; }
+
+.comments { margin-left: 1.6rem;}
+.comments h2 {
+  font-size: 1.5rem;
+  margin-left: -1.7rem;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+}
+.comments ol {
+  margin-left: 1rem;
+}
+.comments li {
+  margin-left: 1rem;
+}
+.comment-name {
+  color: inherit;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-top: -.5rem;
+}
+.comment-text {
+  margin-top: -2rem;
+  margin-bottom: 1.7rem;
+  display: block;
+}
 
 .post .permalink {
   text-decoration: none;
@@ -192,7 +225,7 @@ a:visited { color: #205caa; }
   }
 
   .page-content {
-    width: 40rem;
+    width: calc(100% - 30rem);
     margin-top: 3rem;
   }
 }
