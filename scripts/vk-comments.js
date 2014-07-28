@@ -39,11 +39,13 @@
           item.text = item.text.replace(regexp, '$1<a href="//vk.com/$2" title="$3">$3</a>$4')
         })
         var users = _.indexBy(data.response.profiles, 'id')
-        if (typeof data.response.groups !== 'undefined') {
+        if (typeof data.response.groups !== 'undefined' && data.response.groups.length > 0) {
           var groups =  _.indexBy(data.response.groups, 'id')
-          groups[-73044877].first_name = 'Фронтир'
-          groups[-73044877].photo_50 = '/img/logo.jpg'
-          groups[-73044877].screen_name = 'frontiermag'
+          if (typeof groups[-73044877] !== undefined) {
+            groups[-73044877].first_name = 'Фронтир'
+            groups[-73044877].photo_50 = '/img/logo.jpg'
+            groups[-73044877].screen_name = 'frontiermag'
+          }
           _.extend(users, groups)
         }
         wrapper.innerHTML = renderComments(comments, users)
