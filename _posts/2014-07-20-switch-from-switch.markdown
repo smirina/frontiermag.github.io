@@ -4,6 +4,7 @@ title: Замена switch простыми объектами
 tag: javascript
 short: Тодд Мотто предлагает отказаться от оператора switch, заменив его простыми объектами.
 published: true
+vkid: 25
 ---
 
 Во многих языках программирования существует оператор switch — но должен ли он существовать и дальше?
@@ -323,5 +324,3 @@ console.log(snack); // 'Drink'
 
 
 [Оригинал](http://toddmotto.com/deprecating-the-switch-statement-for-object-literals/?utm_source=frontier&utm_medium=site)
-
-**По сути, это просто применение паттерна *Стратегия*. ([@random_wind](//twitter.com/random_wind))**

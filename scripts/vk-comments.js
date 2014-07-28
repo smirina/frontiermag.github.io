@@ -33,7 +33,20 @@
     else {
       var wrapper = document.querySelector('.comments-list')
       if(data.response.count > 0) {
-        wrapper.innerHTML = renderComments(data.response.items, _.indexBy(data.response.profiles, 'id'))
+        var regexp = /(.*)\[(\w+)\|(.+)\](.*)/
+        var comments = data.response.items
+        _.each(comments, function(item) {
+          item.text = item.text.replace(regexp, '$1<a href="//vk.com/$2" title="$3">$3</a>$4')
+        })
+        var users = _.indexBy(data.response.profiles, 'id')
+        if (typeof data.response.groups !== 'undefined') {
+          var groups =  _.indexBy(data.response.groups, 'id')
+          groups[-73044877].first_name = 'Фронтир'
+          groups[-73044877].photo_50 = '/img/logo.jpg'
+          groups[-73044877].screen_name = 'frontiermag'
+          _.extend(users, groups)
+        }
+        wrapper.innerHTML = renderComments(comments, users)
       }
       else {
         wrapper.innerHTML = 'Здесь тихо и одиноко, %username%'
@@ -55,6 +68,7 @@
 
   var template = _.template(document.querySelector('.templates-comment').innerHTML)
   var renderComments = function(comments, users) {
+    console.log(users)
     return _.reduce(comments, function(memo, obj, index) {
       return memo += obj.text.length > 0 ? template({comment: obj, user: users[obj.from_id]}) : ''
     }, '')
