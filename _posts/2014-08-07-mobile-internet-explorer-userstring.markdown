@@ -36,12 +36,12 @@ WebKit &mdash; самый распостранённый движок ренде
 У Firefox и Internet Explorer немного мобайл-пользователей, поэтому разработчики не заморачиваются оптимизацией под
 эти браузеры.
 
-    Unlike the mostly standards-based desktop web, many modern mobile web pages were designed and built for iOS and the 
-    iPhone. This results in users of other devices often receiving a degraded experience. Many sites use features via a 
-    legacy vendor specific prefix without supporting the un-prefixed standard version or only support vendor prefixes 
-    for certain devices. Other sites use non-standard proprietary APIs that only work with Safari or Chrome. Of course 
-    there were also bugs or missing features in IE that became particularly apparent on mobile sites designed specifically
-    for our competitors' browsers
+> Unlike the mostly standards-based desktop web, many modern mobile web pages were designed and built for iOS and the 
+> iPhone. This results in users of other devices often receiving a degraded experience. Many sites use features via a 
+> legacy vendor specific prefix without supporting the un-prefixed standard version or only support vendor prefixes 
+> for certain devices. Other sites use non-standard proprietary APIs that only work with Safari or Chrome. Of course 
+> there were also bugs or missing features in IE that became particularly apparent on mobile sites designed specifically
+> for our competitors' browsers
   [сообщает блог IE](http://blogs.msdn.com/b/ie/archive/2014/07/31/the-mobile-web-should-just-work-for-everyone.aspx).
 
 Довольно иронично видеть жалобы Microsoft на то, что сайты используют нестандартные фичи и не совместимы с Internet
