@@ -19,16 +19,15 @@ Windows Phone блистает на low-end оборудовании, желез
 в мобильном IE. Мобильный сайт Gmail под Windows имеет больше общего с версией для раскладушек.
 
 Всё это мне напоминает о ранних днях Оперы. Опера страдала от низкой доли на рынке и была вынуждена подменять свой
-юзер-агент, чтобы идентифицироваться как Internet Explorer. Сайты, которые требовали IE работали в Опере, но разработчики
-продолжали её игнорировать.
+юзер-агент, чтобы идентифицироваться как Internet Explorer. Сайты, которые требовали IE, работали в Опере, но разработчики продолжали её игнорировать.
 
-Последний апдейт Windows Phone 8.1 изменил юзер-агент IE, чтобы мимикровать под мобильный Safari. 
+Последний апдейт Windows Phone 8.1 изменил юзер-агент IE, чтобы мимикрировать под мобильный Safari. 
 Microsoft добавил  "like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML. like Gecko) Mobile Safari/537", а также
 "Android 4.0". Сайты, которые проверяют юзер-агент на строки вроде "iPhone", "Android" или "Mobile Safari" 
 должны хорошо работать в последнем мобильном IE. И хотя внутри браузера всё тот же движок рендеринга Trident, 
 Microsoft использовала несколько хаков, чтобы улучшить совместимость с WebKit.
 
-<img src="http://1.bp.blogspot.com/-I9U5yRqEZyk/U-DARUaPh-I/AAAAAAAB-q8/uTQmBonII6U/s1600/windows-phone-user-agent.png">
+<img style="float: right" src="http://1.bp.blogspot.com/-I9U5yRqEZyk/U-DARUaPh-I/AAAAAAAB-q8/uTQmBonII6U/s1600/windows-phone-user-agent.png">
 
 WebKit &mdash; самый распостранённый движок рендеринга в мобильных браузерах. Apple использует его Safari под iPhone
 и iPad, Google использует его в мобильном браузере под Android и позднее в Chrome под Android. Google форкнул WebKit
@@ -37,12 +36,13 @@ WebKit &mdash; самый распостранённый движок ренде
 У Firefox и Internet Explorer немного мобайл-пользователей, поэтому разработчики не заморачиваются оптимизацией под
 эти браузеры.
 
-"Unlike the mostly standards-based desktop web, many modern mobile web pages were designed and built for iOS and the 
-iPhone. This results in users of other devices often receiving a degraded experience. Many sites use features via a 
-legacy vendor specific prefix without supporting the un-prefixed standard version or only support vendor prefixes 
-for certain devices. Other sites use non-standard proprietary APIs that only work with Safari or Chrome. Of course 
-there were also bugs or missing features in IE that became particularly apparent on mobile sites designed specifically
-for our competitors' browsers," informs the IE blog.
+    Unlike the mostly standards-based desktop web, many modern mobile web pages were designed and built for iOS and the 
+    iPhone. This results in users of other devices often receiving a degraded experience. Many sites use features via a 
+    legacy vendor specific prefix without supporting the un-prefixed standard version or only support vendor prefixes 
+    for certain devices. Other sites use non-standard proprietary APIs that only work with Safari or Chrome. Of course 
+    there were also bugs or missing features in IE that became particularly apparent on mobile sites designed specifically
+    for our competitors' browsers
+  [сообщает блог IE](http://blogs.msdn.com/b/ie/archive/2014/07/31/the-mobile-web-should-just-work-for-everyone.aspx).
 
 Довольно иронично видеть жалобы Microsoft на то, что сайты используют нестандартные фичи и не совместимы с Internet
 Explorer. Я всё ещё помню те сайты, что требовали IE6 и отвратительно работали во всех прочих браузерах.
