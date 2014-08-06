@@ -12,6 +12,9 @@ Windows Phone блистает на low-end оборудовании, желез
 Многие компании, в том числе и Google, продолжают игнорировать Windows Phone, многие сайты не оптимизируются под
 мобильный IE.
 
+
+<img style="float: right" title="Новый UA мобильного IE" src="http://1.bp.blogspot.com/-I9U5yRqEZyk/U-DARUaPh-I/AAAAAAAB-q8/uTQmBonII6U/s1600/windows-phone-user-agent.png">
+
 Если вы используете гугловские сервисы и продукты вроде Gmail, Google Maps, Google+, Google Drive, Chrome, 
 то вам сложно перейти на Windows Phone. Существуют некие приложения для гуглосервисов от третьих лиц, но они далеки
 от оригинальных приложений под iOS и Android. Google не хочет делать Windows Phone популярнее, поэтому
@@ -27,7 +30,6 @@ Microsoft добавил  "like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML.
 должны хорошо работать в последнем мобильном IE. И хотя внутри браузера всё тот же движок рендеринга Trident, 
 Microsoft использовала несколько хаков, чтобы улучшить совместимость с WebKit.
 
-<img style="float: right" src="http://1.bp.blogspot.com/-I9U5yRqEZyk/U-DARUaPh-I/AAAAAAAB-q8/uTQmBonII6U/s1600/windows-phone-user-agent.png">
 
 WebKit &mdash; самый распостранённый движок рендеринга в мобильных браузерах. Apple использует его Safari под iPhone
 и iPad, Google использует его в мобильном браузере под Android и позднее в Chrome под Android. Google форкнул WebKit
@@ -42,7 +44,8 @@ WebKit &mdash; самый распостранённый движок ренде
 > for certain devices. Other sites use non-standard proprietary APIs that only work with Safari or Chrome. Of course 
 > there were also bugs or missing features in IE that became particularly apparent on mobile sites designed specifically
 > for our competitors' browsers
-  [сообщает блог IE](http://blogs.msdn.com/b/ie/archive/2014/07/31/the-mobile-web-should-just-work-for-everyone.aspx).
+
+[Cообщает](http://blogs.msdn.com/b/ie/archive/2014/07/31/the-mobile-web-should-just-work-for-everyone.aspx) блог IE.
 
 Довольно иронично видеть жалобы Microsoft на то, что сайты используют нестандартные фичи и не совместимы с Internet
 Explorer. Я всё ещё помню те сайты, что требовали IE6 и отвратительно работали во всех прочих браузерах.
