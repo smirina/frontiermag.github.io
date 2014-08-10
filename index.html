@@ -4,10 +4,10 @@ layout: default
 <ul class="main-posts">
   {% for post in site.posts %}
     <li class="main-post">
-      {% if post.tag %}<div class="tag" rel="tag">{{post.tag}}</div>{% endif %}
+      {% if post.icon%}<i class="icon icon-{{post.icon}} tag-icon"></i>{% endif %}
+      {% if post.tag %}<div class="tag small-caps" rel="tag">{{post.tag}}</div>{% endif %}
       <a class="post-header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <p class="post-short">{{post.short}}</p>
     </li>
   {% endfor %}
 </ul>
-<p class="main-subscribe">У нас есть <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a> и <a href="https://vk.com/frontiermag">паблик</a> в ВК.</p>

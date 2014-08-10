@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post">
   <header>
-    {% if page.tag %}<span class="tag" rel="tag">{{page.tag}}</span>{% endif %}
+    {% if page.tag %}<span class="tag small-caps " rel="tag">{{page.tag}}</span>{% endif %}
     <h1 class="post-header">{{ page.title }} <a class="permalink" title="Ссылка на эту статью" href="{{page.permalink}}" rel="canonical permalink">⚓</a></h1>
     {% if page.short %}<span class="post-short">{{page.short}}</span>{% endif %}
   </header>
@@ -12,11 +12,9 @@ layout: default
 
 {% if page.vkid %}
 <section class="comments">
-  <h2>
-    Комментарии <a href="https://vk.com/frontiermag?w=wall-73044877_{{page.vkid}}">к этому посту</a> в нашем сообществе ВК
-  </h2>
+  <h2> Комментарии </h2>
   <ol class="comments-list">(загружаем...)</ol>
 </section>
 {% endif %}
 
-<a class="back" href="{{site.url}}">к списку статей</a>
+<a class="icon icon-directions back" title="На главную" href="/"></a>

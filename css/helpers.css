@@ -1,0 +1,12 @@
+/* Helpers */
+
+.unselectable {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}

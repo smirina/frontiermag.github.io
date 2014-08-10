@@ -1,0 +1,53 @@
+/* Base */
+/* ----------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: inherit;
+}
+
+html, body { height: 100%; width: 100%; box-sizing: border-box; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #f7f7d2;
+}
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+
+a         { color: #2a7ae2; text-decoration: none; }
+a:hover   { color: #000; text-decoration: underline; }
+a:visited { color: #205caa; }
+
+ul { list-style-type: square; list-style-position: inside;}
+
+.site-header {
+  display: block;
+  width: 72px;
+  margin: 0 auto;
+}
+
+
+.page-content {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 60em;
+  vertical-align: top;
+}
+
+.site-footer {
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  width: 16rem;
+  vertical-align: middle;
+}
+
+.site-footer .icon { float: left;}
+.site-footer-name { display: block; margin-top: .7rem; margin-bottom: -.3rem;}
+.site-footer small { font-size: .8rem; }

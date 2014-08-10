@@ -1,0 +1,75 @@
+.post {
+  header {margin-bottom: 1rem; }
+  &-header {
+    margin-top: -0.3rem;
+    line-height: 1.7rem;
+    font-size: 2rem;
+    margin-left: -.1rem;
+  }
+
+  .permalink {
+    display: none;
+    @media (min-width: 768px) {
+      font-family: Code2000, DejaVu Sans, DejaVu Sans Bold, DejaVu Sans Bold Oblique, DejaVu Sans Condensed, DejaVu Sans Condensed Bold, DejaVu Sans Condensed Bold Oblique, DejaVu Sans Condensed Oblique, DejaVu Sans Mono, DejaVu Sans Mono Bold, DejaVu Sans Oblique, EversonMono, EversonMono-Bold, EversonMono-BoldOblique, EversonMono-Oblique, FreeSerif, GNU Unifont, LastResort, Quivira, Segoe UI Emoji, Segoe UI Symbol, Symbola, Unicode BMP Fallback SIL, Times New Roman, sans-serif;
+      display: inline;
+    }
+    text-decoration: none;
+    color: lightgray;
+    &:hover {color: gray; }
+  }
+
+  p {margin-bottom: 1rem; }
+  strong {font-weight: 700; }
+  h2 { font-size: 1.3rem; margin-bottom: 0.5rem; margin-top: 1rem;}
+  h3 { font-size: 1.2rem; margin-bottom: 0.3rem; margin-top: 0.7rem;}
+  blockquote { padding-left: 0.5rem; border-left: .5rem solid #444; background: #fff;}
+
+}
+
+.comments {
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+  }
+
+  h3 { margin-top: -1rem; font-size: 1.1rem;}
+
+  &-list {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .comment {
+    line-height: 1;
+
+    &-user-image {
+      width: 50px;
+      height: 50px;
+      float: left;
+      margin-right: .5rem;
+    }
+    
+    &-user-name {
+      color: inherit;
+      display: inline-block;
+      font-size: 1.1rem;
+      margin-bottom: .3rem;
+    }
+
+    &-text {
+      margin-bottom: 1.7rem;
+      display: block;
+    }
+
+  }
+
+}
+
+.back { margin-left: -.5rem;}

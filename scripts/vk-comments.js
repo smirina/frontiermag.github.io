@@ -25,6 +25,22 @@
     jsonpWrapper.appendChild(call)
   }
 
+  var handleAttachment = (function(attach) {
+    console.log(attach)
+    var strategy = {
+      'photo': function(attach) {
+        var link = attach.photo_2560 || attach.photo_1280 || attach.photo_807 || attach.photo_604 || attach.photo_130 || attach.photo_75
+        var text = '[картинка]'
+        return {link: link, text: text}
+      }
+    }
+    var handle = function(attach) {
+      if (typeof strategy[attach.type] === 'function') return strategy[attach.type](attach[attach.type])
+      else return undefined
+    }
+
+    return handle
+  })()
 
   var handleComments = function(data) {
     if (data.error) {
@@ -37,6 +53,10 @@
         var comments = data.response.items
         _.each(comments, function(item) {
           item.text = item.text.replace(regexp, '$1<a href="//vk.com/$2" title="$3">$3</a>$4')
+          if(typeof item.attachments !== 'undefined') {
+            item.attachments = _.map(item.attachments, handleAttachment)
+            console.log(item.attachments)
+          }
         })
         var users = _.indexBy(data.response.profiles, 'id')
         if (typeof data.response.groups !== 'undefined' && data.response.groups.length > 0) {
@@ -49,6 +69,9 @@
           _.extend(users, groups)
         }
         wrapper.innerHTML = renderComments(comments, users)
+        if (data.response.count > 10) {
+          wrapper.innerHTML += '<li><h3>Продолжение дискуссии &mdash;&nbsp;<a href="//vk.com/wall-73044877_' + VK.postId + '">в нашем сообществе в ВК</a></h3>'
+        }
       }
       else {
         wrapper.innerHTML = 'Здесь тихо и одиноко, %username%'
@@ -70,7 +93,6 @@
 
   var template = _.template(document.querySelector('.templates-comment').innerHTML)
   var renderComments = function(comments, users) {
-    console.log(users)
     return _.reduce(comments, function(memo, obj, index) {
       return memo += obj.text.length > 0 ? template({comment: obj, user: users[obj.from_id]}) : ''
     }, '')

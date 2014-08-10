@@ -4,6 +4,7 @@ title: Замена switch простыми объектами
 tag: javascript
 short: Тодд Мотто предлагает отказаться от оператора switch, заменив его простыми объектами.
 published: true
+icon: knife
 vkid: 25
 ---
 
