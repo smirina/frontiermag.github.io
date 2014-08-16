@@ -26,7 +26,6 @@
   }
 
   var handleAttachment = (function(attach) {
-    console.log(attach)
     var strategy = {
       'photo': function(attach) {
         var link = attach.photo_2560 || attach.photo_1280 || attach.photo_807 || attach.photo_604 || attach.photo_130 || attach.photo_75
@@ -52,16 +51,18 @@
         var regexp = /(.*)\[(\w+)\|(.+)\](.*)/
         var comments = data.response.items
         _.each(comments, function(item) {
+          console.log(item);
           item.text = item.text.replace(regexp, '$1<a href="//vk.com/$2" title="$3">$3</a>$4')
           if(typeof item.attachments !== 'undefined') {
             item.attachments = _.map(item.attachments, handleAttachment)
-            console.log(item.attachments)
           }
         })
         var users = _.indexBy(data.response.profiles, 'id')
         if (typeof data.response.groups !== 'undefined' && data.response.groups.length > 0) {
           var groups =  _.indexBy(data.response.groups, 'id')
-          if (typeof groups[-73044877] !== undefined) {
+          console.log(groups);
+          if (typeof groups[73044877] !== 'undefined') {
+            groups[-73044877] = groups[73044877]
             groups[-73044877].first_name = 'Фронтир'
             groups[-73044877].photo_50 = '/img/logo.jpg'
             groups[-73044877].screen_name = 'frontiermag'

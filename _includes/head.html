@@ -3,16 +3,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, minimal-ui, scale=1.0">
     <meta name="description" content="{% if page.short %}{{page.short}}{%else%}{{ site.description }}{%endif%}">
     <meta name="keywords" content="html5, javascript, css, frontend, вёрстка, журнал Фронтир">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="stylesheet" href="{{ "/css/base.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet/less" href="{{ "/css/main.less" | prepend: site.baseurl }}">
     <link rel="stylesheet/less" href="{{ "/css/post.less" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/helpers.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/highlight.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet/less" href="{{ "/css/tiles.less" | prepend: site.baseurl }}">
+    <link rel="stylesheet/less" href="{{ "/css/index.less" | prepend: site.baseurl }}">
     <link rel="alternate" type="application/atom+xml" title="RSS-версия Фронтира" href="/feed.xml">
     <!--[if lt IE 9]>
     <script>

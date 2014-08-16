@@ -4,7 +4,6 @@ layout: default
 <ul class="main-posts">
   {% for post in site.posts %}
     <li class="main-post">
-      {% if post.icon%}<i class="icon icon-{{post.icon}} tag-icon"></i>{% endif %}
       {% if post.tag %}<div class="tag small-caps" rel="tag">{{post.tag}}</div>{% endif %}
       <a class="post-header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <p class="post-short">{{post.short}}</p>

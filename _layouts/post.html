@@ -4,7 +4,7 @@ layout: default
 <article class="post">
   <header>
     {% if page.tag %}<span class="tag small-caps " rel="tag">{{page.tag}}</span>{% endif %}
-    <h1 class="post-header">{{ page.title }} <a class="permalink" title="Ссылка на эту статью" href="{{page.permalink}}" rel="canonical permalink">⚓</a></h1>
+    <h1 class="post-header">{{ page.title }} <a class="permalink" title="Ссылка на эту статью" href="{{page.permalink}}" rel="canonical permalink">anchor</a></h1>
     {% if page.short %}<span class="post-short">{{page.short}}</span>{% endif %}
   </header>
   {{ content }} 
@@ -17,4 +17,4 @@ layout: default
 </section>
 {% endif %}
 
-<a class="icon icon-directions back" title="На главную" href="/"></a>
+<a class="back" title="На главную" href="/">&lt;a href='/'>location.href = '/'&lt;/a></a>
