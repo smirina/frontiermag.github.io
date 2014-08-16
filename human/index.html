@@ -1,0 +1,16 @@
+---
+layout: default
+title: Человеческое &mdash; Фронтир
+---
+<h1>Человеческое</h1>
+<h3>Фронтенд и Фронтир пишут люди, а</h3>
+<ul class="main-posts">
+  {% for post in site.posts %}
+  {%if post.tag == 'человеческое' %}
+    <li class="main-post">
+      <a class="post-header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <p class="post-short">{{post.short}}</p>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>

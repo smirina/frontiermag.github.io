@@ -1,29 +1,60 @@
 .post {
-  header {margin-bottom: 1rem; }
-  &-header {
-    margin-top: -0.3rem;
-    line-height: 1.7rem;
-    font-size: 2rem;
-    margin-left: -.1rem;
+  header {
+    margin-bottom: 1rem;
   }
 
+  &-header {
+    margin-top: 0;
+    font-size: 1.1rem;
+    line-height: 1;
+    @media (min-width: 35rem) {
+      font-size: 1.385rem;
+    }
+  }
+  &-short {
+    display: block;
+    margin-top: .5rem;
+  }
   .permalink {
     display: none;
+    font-size: 1em;
+    vertical-align: bottom;
     @media (min-width: 768px) {
-      font-family: Code2000, DejaVu Sans, DejaVu Sans Bold, DejaVu Sans Bold Oblique, DejaVu Sans Condensed, DejaVu Sans Condensed Bold, DejaVu Sans Condensed Bold Oblique, DejaVu Sans Condensed Oblique, DejaVu Sans Mono, DejaVu Sans Mono Bold, DejaVu Sans Oblique, EversonMono, EversonMono-Bold, EversonMono-BoldOblique, EversonMono-Oblique, FreeSerif, GNU Unifont, LastResort, Quivira, Segoe UI Emoji, Segoe UI Symbol, Symbola, Unicode BMP Fallback SIL, Times New Roman, sans-serif;
-      display: inline;
+      display: inline-block;
     }
     text-decoration: none;
     color: lightgray;
     &:hover {color: gray; }
   }
 
-  p {margin-bottom: 1rem; }
+  p {
+    font: 1em/1.5 Helvetica, Arial sans-serif;
+    margin-bottom: 1.5em;
+  }
+
   strong {font-weight: 700; }
-  h2 { font-size: 1.3rem; margin-bottom: 0.5rem; margin-top: 1rem;}
-  h3 { font-size: 1.2rem; margin-bottom: 0.3rem; margin-top: 0.7rem;}
+
+  h2 { font-size: 1.3em; margin-bottom: 1em; margin-top: 1.5em;}
+  h3 { font-size: 1.2em; margin-bottom: 1em; margin-top: 1.5em;}
   blockquote { padding-left: 0.5rem; border-left: .5rem solid #444; background: #fff;}
 
+}
+
+img { 
+  margin: 0 auto;
+  display: block;
+}
+.fl-r {
+  display: inline-block; margin: 0 auto; 
+  @media (min-width: 768px) {
+    float: right;
+  }
+}
+.fl-l {
+  display: inline-block; margin: 0 auto;
+  @media (min-width: 768px) {
+    float: left;
+  }
 }
 
 .comments {
@@ -72,4 +103,8 @@
 
 }
 
-.back { margin-left: -.5rem;}
+a.back { color: #000; text-decoration: none; }
+
+.back:before { content: '⬑ '}
+
+p code { display: inline-block; background: lightgray;}

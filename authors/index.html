@@ -1,0 +1,10 @@
+---
+layout: page
+title: Авторы
+---
+<ul>
+{% assign authors = site.posts | group_by: 'author' | sort: 'items' %}
+{% for author in authors %}
+  {% if author.name != '' %}<li>{{author.name}} [{{ author.items | size }}]{%endif %}
+{% endfor %}
+</ul>

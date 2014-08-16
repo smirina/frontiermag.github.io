@@ -4,6 +4,7 @@ title: "Инлайн-блоки как светлое настоящее"
 tag: "вёрстка"
 short: "Будет полезно тем, у кого мало опыта с инлайн-блоками; всем прочим — только ностальгия."
 published: true
+author: "Маринин Тим"
 vkid: 8
 ---
 Пока flexbox ещё за Горами Реализаций, inline-block — надёжный инструмент верстальщика.
@@ -61,13 +62,13 @@ vkid: 8
 </style>
 <ul class="sample"><!--
  --><li class="sample-item">
-        <img src="http://placekitten.com/160/100">
+        <img src="https://placekitten.com/g/160/100">
         <span>Котейка номер раз. Очень вежливый, приучен к лотку. Любит Звёздные Войны и верстать на досуге.</span></li><!--
  --><li class="sample-item">
-        <img src="http://placekitten.com/160/100">
+        <img src="https://placekitten.com/g/160/100">
         <span>Котейка номер два. Не такой вежливый, зато милый: расцарапает, а не жалко!</span></li><!--
  --><li class="sample-item">
-        <img src="http://placekitten.com/160/100">
+        <img src="https://placekitten.com/g/160/100">
         <span>Котейка номер три. Если можно так сказать, чёрная лошадка среди этих котеек. Я бы даже сказал, кот в мешке!</span></li><!--
 --></ul>
 
