@@ -7,7 +7,11 @@ layout: default
     <h1 class="post-header">{{ page.title }} <a class="permalink" title="Ссылка на эту статью" href="{{page.permalink}}" rel="canonical permalink">anchor</a></h1>
     {% if page.short %}<span class="post-short">{{page.short}}</span>{% endif %}
   </header>
-  {{ content }} 
+  {{ content }}
+  <aside>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ru">Твитнуть</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </aside>
 </article>
 
 {% if page.vkid %}
