@@ -52,7 +52,7 @@
         var comments = data.response.items
         _.each(comments, function(item) {
           console.log(item);
-          item.text = item.text.replace(regexp, '$1<a href="//vk.com/$2" title="$3">$3</a>$4')
+          item.text = item.text.replace(regexp, '$1$3$4')
           if(typeof item.attachments !== 'undefined') {
             item.attachments = _.map(item.attachments, handleAttachment)
           }
@@ -72,6 +72,8 @@
         wrapper.innerHTML = renderComments(comments, users)
         if (data.response.count > 10) {
           wrapper.innerHTML += '<li><h3>Продолжение дискуссии &mdash;&nbsp;<a href="//vk.com/wall-73044877_' + VK.postId + '">в нашем сообществе в ВК</a></h3>'
+        } else {
+          wrapper.innerHTML += '<li><h3>Оставьте свой комментарий <a href="//vk.com/wall-73044877_' + VK.postId + '">в нашем сообществе в ВК</a></h3>'
         }
       }
       else {

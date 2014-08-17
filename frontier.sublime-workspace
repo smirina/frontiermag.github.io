@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"li",
+				"lis-n	list-style: none;"
+			],
+			[
+				"list",
+				"list-s	list-style-type: square;"
+			],
+			[
+				"atta",
+				"attachments"
+			],
+			[
+				"handl",
+				"handleAttachments"
+			],
+			[
 				"Challe",
 				"ChallengeView"
 			],
@@ -43,6 +59,210 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "css/main.less",
+			"settings":
+			{
+				"buffer_size": 1165,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "editor/index.html",
+			"settings":
+			{
+				"buffer_size": 928,
+				"line_ending": "Unix",
+				"name": "---"
+			}
+		},
+		{
+			"file": "editor/editor.css",
+			"settings":
+			{
+				"buffer_size": 659,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/styleguide.md",
+			"settings":
+			{
+				"buffer_size": 575,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/post.less",
+			"settings":
+			{
+				"buffer_size": 1688,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-07-23-email-first.markdown",
+			"settings":
+			{
+				"buffer_size": 2333,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_site/mobile-internet-explorer-userstring.html",
+			"settings":
+			{
+				"buffer_size": 9077,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-08-07-mobile-internet-explorer-userstring.markdown",
+			"settings":
+			{
+				"buffer_size": 4659,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/tiles.less",
+			"settings":
+			{
+				"buffer_size": 1580,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/vk-comments.js",
+			"settings":
+			{
+				"buffer_size": 3673,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 143,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/page.html",
+			"settings":
+			{
+				"buffer_size": 187,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/post.html",
+			"settings":
+			{
+				"buffer_size": 1099,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-08-14-app-vs-content.markdown",
+			"settings":
+			{
+				"buffer_size": 1471,
+				"line_ending": "Unix",
+				"name": "---"
+			}
+		},
+		{
+			"file": "_posts/2014-06-20-hello-world.markdown",
+			"settings":
+			{
+				"buffer_size": 401,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-06-22-javascript-cryptography.markdown",
+			"settings":
+			{
+				"buffer_size": 18104,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "authors/index.html",
+			"settings":
+			{
+				"buffer_size": 243,
+				"line_ending": "Unix",
+				"name": "---"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nBetter CoffeeScript:\n-------------------\n\n  # Better CoffeeScript changelog\n  \n  ```\n  IF YOU SEE THIS MESSAGE\n  Because you have updated the plugin,\n  you might need to restart Sublime Text\n  if the syntax highlighter stopped working.\n  ```\n  \n  ## Version 2.1\n  \n  ### May 2014 Log\n  * Have been doing little improvements with the help of community\n  * Pull requests are always welcome and appreciated.\n  * Looking for active maintainer, will give pointers for development!!!\n  \n  \n  \n  ## Version 2.0\n  \n  Version 2.0 is out!\n  \n  ### Log:\n  * New written Watch Mode.\n  * Line number tracking in Watch Mode.\n  * Toggle 2 columns when enabling Watch Mode.\n  * It is possible to compile with sourcemaps.\n  * Compile litcofee files.\n  * Auto-indent after `else\\n`.\n  * and other bugs fixes.\n  \n  \n  \n",
+			"settings":
+			{
+				"buffer_size": 851,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		},
+		{
+			"file": "human/index.html",
+			"settings":
+			{
+				"buffer_size": 433,
+				"line_ending": "Unix",
+				"name": "index.html"
+			}
+		},
+		{
+			"file": "_includes/head.html",
+			"settings":
+			{
+				"buffer_size": 2698,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/base.css",
+			"settings":
+			{
+				"buffer_size": 782,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <title>Стайлгайд «Фронтира»</title>\n\n  <meta name=\"description\" content=\"\">\n  <meta name=\"generator\" content=\"kss-node\" />\n  <meta name=\"viewport\" content=\"width=device-width, minimal-ui\">\n\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"http://fonts.googleapis.com/css?family=Droid+Serif\">\n  <link rel=\"stylesheet\" href=\"public/kss.css\">\n  <link rel=\"stylesheet\" href=\"public/style.css\">\n</head>\n<body><div id=\"kss-wrapper\">\n\n<div id=\"kss-nav\">\n  <header id=\"kss-header\">\n    <hgroup><h1>Гайд «Фронтира»</h1></hgroup>\n  </header>\n  <aside>\n    <nav><ul>\n      <li><a href=\"index.html\">0.0: Overview</a></li>\n    {{#eachRoot}}\n      <li><a href=\"section-{{reference}}.html\">{{reference}}.0: {{header}}</a></li>\n    {{/eachRoot}}\n    </ul></nav>\n  </aside>\n</div>\n<div role=\"main\" id=\"kss-main\">\n  <article id=\"kss-content\">\n  {{#if overview}}\n    {{{overview}}}\n  {{else}}\n\n    {{!\n      Find each section, in order.\n      If there's no markup or modifiers supplied, use a Markdown-only\n      layout instead.\n\n      The \"root\" element comes first in this loop, and can be detected using\n      the \"#ifDepth 1\" block as seen below.\n    }}\n    {{#eachSection rootNumber}}\n      {{#unlessDepth 1}}\n      <section class=\"kss-depth-{{ refDepth }}\">\n      {{/unlessDepth}}\n\n      <h1 class=\"kss-title\"><span class=\"kss-ref\">{{ reference }}{{#ifDepth 1}}.0{{/ifDepth}}</span> - {{ header }}</h1>\n\n      {{#if description}}\n        <div class=\"kss-box\">{{{description}}}</div>\n      {{/if}}\n\n      {{#if markup}}\n        <table class=\"kss-mod-list\">\n          <tr class=\"kss-mod-desc-group\">\n            <td class=\"kss-mod-desc\"><p>Default styling</p></td>\n            <td class=\"kss-mod-name\"></td>\n          </tr>\n          <tr class=\"kss-mod-example\">\n            <td colspan=\"2\">{{modifierMarkup}}</td>\n          </tr>\n        {{#eachModifier}}\n          <tr class=\"kss-mod-desc-group\">\n            <td class=\"kss-mod-desc\">{{{description}}}</td>\n            <td class=\"kss-mod-name\"><p>{{name}}</p></td>\n          </tr>\n          <tr class=\"kss-mod-example\">\n            <td colspan=\"2\">{{modifierMarkup}}</td>\n          </tr>\n        {{/eachModifier}}\n        </table>\n\n        <div class=\"kss-markup\">\n          <pre class=\"prettyprint lang-html\">{{markup}}</pre>\n        </div>\n      {{/if}}\n\n      {{#unlessDepth 1}}\n      </section>\n      {{/unlessDepth}}\n    {{/eachSection}}\n  {{/if}}\n  </article>\n</div>\n\n<!-- SCRIPTS -->\n<script src=\"public/kss.js\"></script>\n<script src=\"public/prettify.js\"></script>\n<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js\"></script>\n<script>\n  $(document).ready(function(){\n    var sidebarAdjust = function() {\n      // Match footer/body height\n      var height = Math.max($(window).height(), $('#kss-main').height());\n\n      if ($(window).width() <= 768) {\n        $('#kss-main, #kss-nav').height('auto');\n      } else {\n        $('#kss-main, #kss-nav').height(height);\n      }\n    };\n\n    $(window).resize(sidebarAdjust);\n    $(window).scroll(sidebarAdjust);\n    sidebarAdjust();\n\n    // Ensure code blocks are highlighted properly...\n    $('pre>code').addClass('prettyprint');\n    prettyPrint();\n  });\n</script>\n\n</div></body>\n</html>\n",
+			"file": "styleguide-template/index.html",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 3549,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "morning/index.markdown",
+			"settings":
+			{
+				"buffer_size": 466,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<head>\n    <!--Привет! Если хочешь опубликовать статью на Фронтире, то пиши на marinintim@gmail.com-->\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <title>Вёрстка контента и вёрстка приложений</title>\n    <meta name=\"viewport\" content=\"width=device-width, minimal-ui, scale=1.0\">\n    <meta name=\"description\" content=\"Маринин Тим о разнице в подходах и требованиях к фронтенду.\">\n    <meta name=\"keywords\" content=\"html5, javascript, css, frontend, вёрстка, журнал Фронтир\">\n    <link rel=\"canonical\" href=\"http://frontiermag.ru/app-vs-content.html\">\n    <link rel=\"stylesheet\" href=\"/css/base.css\">\n    <link rel=\"stylesheet/less\" href=\"/css/main.less\">\n    <link rel=\"stylesheet/less\" href=\"/css/post.less\">\n    <link rel=\"stylesheet\" href=\"/css/helpers.css\">\n    <link rel=\"stylesheet\" href=\"/css/highlight.css\">\n    <link rel=\"stylesheet/less\" href=\"/css/index.less\">\n    <link rel=\"alternate\" type=\"application/atom+xml\" title=\"RSS-версия Фронтира\" href=\"/feed.xml\">\n    <!--[if lt IE 9]>\n    <script>\n      var e = (\"abbr,article,aside,audio,canvas,datalist,details,\" +\n        \"figure,footer,header,hgroup,mark,menu,meter,nav,output,\" +\n        \"progress,section,time,video\").split(',');\n      for (var i = 0; i < e.length; i++) {\n        document.createElement(e[i]);\n      }\n    </script>\n    <![endif]-->\n    <script type=\"text/javascript\">\n    window.analytics=window.analytics||[],window.analytics.methods=[\"identify\",\"group\",\"track\",\"page\",\"pageview\",\"alias\",\"ready\",\"on\",\"once\",\"off\",\"trackLink\",\"trackForm\",\"trackClick\",\"trackSubmit\"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById(\"analytics-js\")){var a=document.createElement(\"script\");a.type=\"text/javascript\",a.id=\"analytics-js\",a.async=!0,a.src=(\"https:\"===document.location.protocol?\"https://\":\"http://\")+\"cdn.segment.io/analytics.js/v1/\"+t+\"/analytics.min.js\";var n=document.getElementsByTagName(\"script\")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION=\"2.0.9\",\n    window.analytics.load(\"0e45vt6nup\");\n    window.analytics.page();\n    </script>\n</head>\n\n<a role=\"header\" title=\"Фронтир &mdash; журнал о фронтенде\" href=\"/\" class=\"site-header unselectable\">«Фронтир»</a>\n<main class=\"page-content\">\n  <article class=\"post\">\n  <header>\n    <span class=\"tag small-caps \" rel=\"tag\">человеческое</span>\n    <h1 class=\"post-header\">Вёрстка контента и вёрстка приложений <a class=\"permalink\" title=\"Ссылка на эту статью\" href=\"\" rel=\"canonical permalink\">anchor</a></h1>\n    <span class=\"post-short\">Маринин Тим о разнице в подходах и требованиях к фронтенду.</span>\n  </header>\n  <blockquote>\n  <p>— Тим, там ещё одна бага с подсчётом высот в дэйли<br /> \n— Аааааааргх!</p>\n</blockquote>\n\n<p>Раньше в интернете существовали только контентные проекты — статьи, длинные тексты или ленты фотографий, и вся вёрстка сводилась к тому, чтобы грамотно представить содержимое. А затем появились веб-приложения и принесли с собой новые вызовы: необходимо представить весь необходимый контент в рамках одного экрана, ничего не должно сломаться, интерфейс может и, наверняка, будет меняться каждую неделю.</p>\n\n<p>Сравним веб-приложения и контентные проекты:</p>\n\n<style>\ntd, th { padding: 0 1rem 1rem 0; }\nth { text-align: left; }\n</style>\n\n<table>\n  <thead>\n    <tr>\n      <th>Контент</th>\n      <th>Приложения</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Скролл — основной элемент интерфейса</td>\n      <td>Великое множество элементов управления</td>\n    </tr>\n    <tr>\n      <td>Главное — представить контент</td>\n      <td>Главное — функциональность</td>\n    </tr>\n    <tr>\n      <td>Мало JS, имеет смысл Progressive Enhancement</td>\n      <td>Много JS, можно не ориентироваться на людей без него</td>\n    </tr>\n  </tbody>\n</table>\n\n<p>Соответственно, к их вёрстке применимы разные требования: контент должен быть свёрстан для максимально удобного потребления (типографика), вёрстка приложения — быть максимально надёжной.</p>\n\n<p>Страшно ли, если добавится ещё одна строка? В контенте — ни капли; а в ненадёжно свёрстанном приложении может возникнуть общий скролл или наложиться одно на другое (или ещё что похуже!)</p>\n \n</article>\n\n\n\n<a class=\"back\" title=\"На главную\" href=\"/\">&lt;a href='/'>location.href = '/'&lt;/a></a>\n</main>\n<footer class=\"site-footer\">\n<span class=\"site-footer-name\">&laquo;Фронтир&raquo;</span>\n  <small>дивный мир фронтенда</small></span>\n</footer>\n\n<div class=\"jsonp-wrapper\"></div>\n\n<script type=\"text/template\" class=\"templates-comment\">\n  <li class=\"comment\">\n    <a href=\"//vk.com/<%= user.screen_name %>\" class=\"comment-user-name\">\n      <%= user.first_name %> <%= user.last_name %>\n    </a>\n    <span class=\"comment-text\">\n      <%= comment.text %>\n      <% _.each(comment.attachments, function(v){ %>\n        <a href=\"<%= v.link %>\"><%= v.text %></a>\n      <% })%></span>\n  </li>\n</script>\n<script src=\"//cdn.jsdelivr.net/underscorejs/1.6.0/underscore-min.js\"></script>\n<script src=\"//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js\"></script>\n<script src=\"/scripts/vk-comments.js\"></script>\n",
+			"file": "_site/app-vs-content.html",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 5408,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -121,20 +341,58 @@
 	},
 	"file_history":
 	[
+		"/home/tim/frontier/css/index-posts.less",
+		"/home/tim/frontier/index.html",
+		"/home/tim/frontier/saloon/index.html",
+		"/home/tim/frontier/editor/bower_components/bootstrap/js/popover.js",
+		"/home/tim/frontier/_site/professional-under-pressure.html",
+		"/home/tim/frontier/README.md",
+		"/home/tim/frontier/editor/bower_components/jquery/src/var/indexOf.js",
+		"/home/tim/frontier/editor/bower_components/jquery/src/intro.js",
+		"/home/tim/frontier/editor/bower_components/bootstrap/.bower.json",
+		"/home/tim/frontier/editor/bower_components/bootstrap/README.md",
+		"/home/tim/frontier/editor/bower_components/bootstrap/less/mixins/text-overflow.less",
+		"/home/tim/frontier/editor/bower_components/bootstrap/dist/css/bootstrap-theme.css",
+		"/home/tim/frontier/editor/bower_components/jquery/src/dimensions.js",
+		"/home/tim/frontier/editor/bower_components/bootstrap/js/dropdown.js",
+		"/home/tim/frontier/saloon/bower_components/bootstrap/less/responsive-embed.less",
+		"/home/tim/frontier/css/helpers.css",
+		"/home/tim/frontier/_includes/header.html",
+		"/home/tim/frontier/css/highlight.css",
+		"/home/tim/frontier/_site/jsonstub-and-others.html",
+		"/home/tim/frontier/css/post.less",
+		"/home/tim/frontier/_site/authors/index.html",
+		"/home/tim/frontier/about.md",
+		"/home/tim/frontier/_posts/2014-06-25-jsonstub-and-others.markdown",
+		"/home/tim/frontier/_posts/2014-07-20-switch-from-switch.markdown",
+		"/home/tim/frontier/_posts/2014-06-26-professional-under-pressure.markdown",
+		"/home/tim/frontier/_includes/footer.html",
+		"/home/tim/frontier/recipes/transitions.html",
+		"/home/tim/frontier/_posts/2014-06-24-inline-block.markdown",
+		"/home/tim/frontier/img/outdoor-icons-small.png",
+		"/home/tim/frontier/_site/email-first.html",
+		"/home/tim/frontier/_site/switch-from-switch.html",
+		"/home/tim/frontier/_site/inline-block.html",
+		"/home/tim/frontier/recipes/long.html",
+		"/home/tim/frontier/_site/CNAME",
+		"/home/tim/.config/sublime-text-3/Packages/User/Gist.sublime-settings",
+		"/home/tim/frontier/recipes/vk.html",
+		"/home/tim/frontier/_site/you-re-already-good-designer.html",
+		"/home/tim/frontier/feed.xml",
+		"/home/tim/frontier/css/tiles.less",
+		"/home/tim/frontier/_site/hello-world.html",
+		"/home/tim/frontier/css/tiles.css",
+		"/home/tim/frontier/css/base.css",
+		"/home/tim/frontier/img/outdoor-icons-large.png",
 		"/home/tim/frontier/_posts/2014-06-22-javascript-cryptography.markdown",
 		"/home/tim/frontier/_posts/2014-06-21-inline-block.markdown",
 		"/home/tim/dev/vk-irc/Gruntfile.js",
 		"/home/tim/frontier/_posts/2014-06-22-bad-work.markdown",
 		"/home/tim/frontier/_layouts/default.html",
-		"/home/tim/frontier/_includes/footer.html",
-		"/home/tim/frontier/_includes/header.html",
 		"/home/tim/frontier/_includes/head.html",
 		"/home/tim/frontier/_config.yml",
-		"/home/tim/frontier/about.md",
 		"/home/tim/frontier/_layouts/post.html",
 		"/home/tim/frontier/css/main.css",
-		"/home/tim/frontier/_posts/2014-06-24-inline-block.markdown",
-		"/home/tim/frontier/index.html",
 		"/home/tim/frontier/_posts/2014-06-20-hello-world.markdown",
 		"/home/tim/frontier/_posts/2014-06-21-w3cschools.markdown",
 		"/home/tim/dev/bearlog/siteConfig.js",
@@ -210,49 +468,11 @@
 		"/home/tim/public_html/actimind/public/js/Models/Nested.js",
 		"/home/tim/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
 		"/home/tim/public_html/actimind/public/js/Config.coffee",
-		"/home/tim/public_html/actimind/public/js/Collections/Country.js",
-		"/home/tim/public_html/actimind/public/js/Views/Address.js",
-		"/home/tim/public_html/actimind/public/js/Models/PurchaseRequest.js",
-		"/home/tim/public_html/actimind/public/js/Models/Address.js",
-		"/home/tim/public_html/actimind/public/js/vendor/backbone.localStorage-min.js",
-		"/home/tim/public_html/actimind/public/css/normalize.css",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Views/Form.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Views/CreditCard.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Views/Address.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/main.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/css/main.css",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Views/Global.js",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Views/Error.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Views/Global.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Views/Summary.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Models/Country.js",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Models/Address.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Models/PurchaseRequest.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Models/PurchaseRequest.js",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Models/Country.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Views/Summary.js",
-		"/home/tim/public_html/actimind/tpp_server/public/index.html",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Collections/Country.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Models/CreditCard.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Models/Address.js",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Views/Address.js",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Models/CreditCard.js",
-		"/home/tim/.config/sublime-text-3/Packages/User/coffee compile.sublime-build",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Collections/CreditCard.coffee",
-		"/home/tim/public_html/actimind/tpp_server/public/js/Collections/Address.coffee",
-		"/home/tim/public_html/devjokes.coffee",
-		"/home/tim/public_html/actimind/PurchaseRequest/index.html",
-		"/home/tim/public_html/actimind/PurchaseRequest/js/Views/CreditCard.coffee",
-		"/home/tim/public_html/actimind/PurchaseRequest/js/Views/Form.coffee",
-		"/home/tim/public_html/actimind/PurchaseRequest/js/Models/Address.coffee",
-		"/home/tim/public_html/actimind/PurchaseRequest/js/Views/Global.coffee",
-		"/home/tim/public_html/actimind/PurchaseRequest/js/Models/PurchaseRequest.coffee",
-		"/home/tim/public_html/actimind/PurchaseRequest/js/Models/CreditCard.coffee",
-		"/home/tim/public_html/actimind/PurchaseRequest/js/main.coffee"
+		"/home/tim/public_html/actimind/public/js/Collections/Country.js"
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -277,6 +497,34 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"content",
+			":;}",
+			"editor",
+			"    \\n",
+			"\"\\.",
+			"```",
+			"\\n```",
+			"\\*\\/",
+			"\\/\\* \\/\\*",
+			"\\n\\.highlight (.+) \\{(.+) (/\\*.+)\\*/",
+			"\\/\\*(.+)\\n(.+)\\n(.+)\\n\\*\\/",
+			"\\n\\.highlight (.+) \\{(.+) (/\\*.+)\\*/",
+			"\\n\\.highlight (.+) (.+) (/\\*.+)\\*/",
+			"\\n(.+) (/\\*.+\\*/)",
+			"###",
+			"console",
+			"groups[-",
+			"text",
+			"h3",
+			"\\s+view\\n",
+			"\\s+view",
+			"blockquote",
+			")px",
+			"* ",
+			"&.",
+			"icon",
+			"\n.",
+			"knife",
 			"последнего",
 			";\n",
 			"=>",
@@ -375,6 +623,27 @@
 		"regex": true,
 		"replace_history":
 		[
+			"\\n",
+			"\"",
+			"    ",
+			"\\n\\n```",
+			"\\*\\/\\n",
+			"\\n\\/\\*",
+			"\\/\\* $3\\n```<span class=\"highlight\"><span class=\"$1\">example</span></span>```\\n\\*\\/\\n\\.highlight $1 \\{$2",
+			"\\/\\/$1\\n\\/\\/$2\\n\\/\\/$3",
+			"\\n $3 \\n $1 \\n Styleguide 2.1\\n\\*\\/\\n \\{$2",
+			"\\n $3 \\n $1 \\n Styleguide 2.1\\n\\*\\/ \\{$2",
+			"\\n $3 \\n $1 \\*\\/ \\{$2",
+			"\\n $3 \\n $1 \\*\\/ $2",
+			"\\n $3 \\n $1 \\*/ $2",
+			"\\n $2 $1",
+			"\\n $1 $0",
+			"$1 $0",
+			"##",
+			", ",
+			"px)",
+			"",
+			"&",
 			"->",
 			"",
 			"@",
@@ -410,8 +679,708 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "css/main.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								248,
+								248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "editor/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 928,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								438,
+								438
+							]
+						],
+						"settings":
+						{
+							"auto_name": "---",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "editor/editor.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								524,
+								524
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/styleguide.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 575,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/post.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1516,
+								1516
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 980.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_posts/2014-07-23-email-first.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_site/mobile-internet-explorer-userstring.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9077,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1176.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_posts/2014-08-07-mobile-internet-explorer-userstring.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "css/tiles.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1580,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1572,
+								1572
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "scripts/vk-comments.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3673,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2789,
+								2789
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 237.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "_layouts/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "_layouts/page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "_layouts/post.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1099,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								917,
+								917
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 14.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "_posts/2014-08-14-app-vs-content.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								116,
+								116
+							]
+						],
+						"settings":
+						{
+							"auto_name": "---",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "_posts/2014-06-20-hello-world.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "_posts/2014-06-22-javascript-cryptography.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "authors/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								224,
+								224
+							]
+						],
+						"settings":
+						{
+							"auto_name": "---",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								295,
+								295
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "human/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								242,
+								242
+							]
+						],
+						"settings":
+						{
+							"auto_name": "index.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2698,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1169,
+								1169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "css/base.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								614,
+								614
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "styleguide-template/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2757,
+								2757
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "morning/index.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16,
+								16
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "_site/app-vs-content.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -461,7 +1430,7 @@
 	"project": "frontier.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -470,12 +1439,212 @@
 		"selected_items":
 		[
 			[
-				"post.co",
-				"~/public_html/cotd/coffee/Views/Post.coffee"
+				"vk",
+				"scripts/vk-comments.js"
+			],
+			[
+				"vk-co",
+				"scripts/vk-comments.js"
+			],
+			[
+				"post.h",
+				"_layouts/post.html"
+			],
+			[
+				"post.l",
+				"css/post.less"
 			],
 			[
 				"post",
-				"public/js/Views/Post.js"
+				"_layouts/post.html"
+			],
+			[
+				"readm",
+				"README.md"
+			],
+			[
+				"head",
+				"_includes/head.html"
+			],
+			[
+				"main",
+				"css/main.less"
+			],
+			[
+				"he",
+				"css/helpers.css"
+			],
+			[
+				"hel",
+				"css/helpers.css"
+			],
+			[
+				"base",
+				"css/base.css"
+			],
+			[
+				"st",
+				"css/styleguide.md"
+			],
+			[
+				"bas",
+				"css/base.css"
+			],
+			[
+				"sty",
+				"css/styleguide.md"
+			],
+			[
+				"s",
+				"css/styleguide.md"
+			],
+			[
+				"styl",
+				"css/styleguide.md"
+			],
+			[
+				"hig",
+				"css/highlight.css"
+			],
+			[
+				"post.le",
+				"css/post.less"
+			],
+			[
+				"post.",
+				"css/post.less"
+			],
+			[
+				"autho",
+				"authors/index.html"
+			],
+			[
+				"inde",
+				"authors/index.html"
+			],
+			[
+				"app",
+				"_posts/2014-08-14-app-vs-content.markdown"
+			],
+			[
+				"footer",
+				"_includes/footer.html"
+			],
+			[
+				"user",
+				"_posts/2014-08-07-mobile-internet-explorer-userstring.markdown"
+			],
+			[
+				"ema",
+				"_posts/2014-07-23-email-first.markdown"
+			],
+			[
+				"eam",
+				"_posts/2014-07-23-email-first.markdown"
+			],
+			[
+				"m",
+				"css/main.less"
+			],
+			[
+				"post.html",
+				"_layouts/post.html"
+			],
+			[
+				"index.less",
+				"css/index.less"
+			],
+			[
+				"foot",
+				"_includes/footer.html"
+			],
+			[
+				"swi",
+				"_posts/2014-07-20-switch-from-switch.markdown"
+			],
+			[
+				"inline",
+				"_posts/2014-06-24-inline-block.markdown"
+			],
+			[
+				"inlin",
+				"_posts/2014-06-24-inline-block.markdown"
+			],
+			[
+				"inlion",
+				"_posts/2014-06-24-inline-block.markdown"
+			],
+			[
+				"head.",
+				"_includes/head.html"
+			],
+			[
+				"i",
+				"css/index.less"
+			],
+			[
+				"index",
+				"css/index.less"
+			],
+			[
+				"less",
+				"css/post.less"
+			],
+			[
+				"post.htm",
+				"_layouts/post.html"
+			],
+			[
+				"main.",
+				"css/main.css"
+			],
+			[
+				"index.htm",
+				"index.html"
+			],
+			[
+				"header",
+				"_includes/header.html"
+			],
+			[
+				"post.ht",
+				"_layouts/post.html"
+			],
+			[
+				"tiles",
+				"css/tiles.less"
+			],
+			[
+				"foote",
+				"_includes/footer.html"
+			],
+			[
+				"foo",
+				"_includes/footer.html"
+			],
+			[
+				"vk-",
+				"scripts/vk-comments.js"
+			],
+			[
+				"vk-com",
+				"scripts/vk-comments.js"
+			],
+			[
+				"fo",
+				"_includes/footer.html"
+			],
+			[
+				"def",
+				"_layouts/default.html"
+			],
+			[
+				"sw",
+				"_posts/2014-07-20-switch-from-switch.markdown"
+			],
+			[
+				"post.co",
+				"~/public_html/cotd/coffee/Views/Post.coffee"
 			],
 			[
 				"in",
@@ -502,24 +1671,12 @@
 				"css/main.css"
 			],
 			[
-				"main",
-				"css/main.css"
-			],
-			[
 				"indexhtm",
 				"templates/index.html"
 			],
 			[
 				"conorder",
 				"app/Controller_Order.php"
-			],
-			[
-				"index",
-				"templates/index.html"
-			],
-			[
-				"index.htm",
-				"templates/index.html"
 			],
 			[
 				"ind.ht",
@@ -536,10 +1693,6 @@
 			[
 				"mancat",
 				"templates/manageCategory.html"
-			],
-			[
-				"main.",
-				"css/main.css"
 			],
 			[
 				"manitem",
@@ -560,10 +1713,6 @@
 			[
 				"index.html",
 				"templates/index.html"
-			],
-			[
-				"inde",
-				"index.php"
 			],
 			[
 				"index.php",
@@ -596,7 +1745,7 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 268.0,
