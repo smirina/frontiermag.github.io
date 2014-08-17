@@ -1,5 +1,10 @@
-/* Helpers */
+/* #Хелперы */
 
+
+/* Невыбираемое. Подходит для контролов, на который текст не должен выбираться (кнопки и тому подобное)
+
+    <span class="unselectable">попробуй выбери меня</span>
+*/
 .unselectable {
   user-select: none;
   -ms-user-select: none;
@@ -7,6 +12,11 @@
   -webkit-user-select: none;
 }
 
+
+/* Капитель — она же «маленькие заглавные»
+
+    <span class="small-caps">капитель</span>
+ */
 .small-caps {
   font-variant: small-caps;
 }

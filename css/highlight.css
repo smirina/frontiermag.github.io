@@ -1,63 +1,359 @@
 /* Syntax highlighting styles */
-/* ----------------------------------------------------------*/
+
 
 .highlight  { background: #ffffff; padding-left: 1rem; border-left: .5rem solid #444; margin: 0 0 1.5rem 0;}
-.highlight .c { color: #999988; font-style: italic } /* Comment */
-.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
-.highlight .k { font-weight: bold } /* Keyword */
-.highlight .o { font-weight: bold } /* Operator */
-.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
-.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
-.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
-.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
-.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
-.highlight .ge { font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #aa0000 } /* Generic.Error */
-.highlight .gh { color: #999999 } /* Generic.Heading */
-.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
-.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
-.highlight .go { color: #888888 } /* Generic.Output */
-.highlight .gp { color: #555555 } /* Generic.Prompt */
-.highlight .gs { font-weight: bold } /* Generic.Strong */
-.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
-.highlight .gt { color: #aa0000 } /* Generic.Traceback */
-.highlight .kc { font-weight: bold } /* Keyword.Constant */
-.highlight .kd { font-weight: bold } /* Keyword.Declaration */
-.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
-.highlight .kr { font-weight: bold } /* Keyword.Reserved */
-.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
-.highlight .m { color: #009999 } /* Literal.Number */
-.highlight .s { color: #d14 } /* Literal.String */
-.highlight .na { color: #008080 } /* Name.Attribute */
-.highlight .nb { color: #0086B3 } /* Name.Builtin */
-.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
-.highlight .no { color: #008080 } /* Name.Constant */
-.highlight .ni { color: #800080 } /* Name.Entity */
-.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
-.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
-.highlight .nn { color: #555555 } /* Name.Namespace */
-.highlight .nt { color: #000080 } /* Name.Tag */
-.highlight .nv { color: #008080 } /* Name.Variable */
-.highlight .ow { font-weight: bold } /* Operator.Word */
-.highlight .w { color: #bbbbbb } /* Text.Whitespace */
-.highlight .mf { color: #009999 } /* Literal.Number.Float */
-.highlight .mh { color: #009999 } /* Literal.Number.Hex */
-.highlight .mi { color: #009999 } /* Literal.Number.Integer */
-.highlight .mo { color: #009999 } /* Literal.Number.Oct */
-.highlight .sb { color: #d14 } /* Literal.String.Backtick */
-.highlight .sc { color: #d14 } /* Literal.String.Char */
-.highlight .sd { color: #d14 } /* Literal.String.Doc */
-.highlight .s2 { color: #d14 } /* Literal.String.Double */
-.highlight .se { color: #d14 } /* Literal.String.Escape */
-.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
-.highlight .si { color: #d14 } /* Literal.String.Interpol */
-.highlight .sx { color: #d14 } /* Literal.String.Other */
-.highlight .sr { color: #009926 } /* Literal.String.Regex */
-.highlight .s1 { color: #d14 } /* Literal.String.Single */
-.highlight .ss { color: #990073 } /* Literal.String.Symbol */
-.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
-.highlight .vc { color: #008080 } /* Name.Variable.Class */
-.highlight .vg { color: #008080 } /* Name.Variable.Global */
-.highlight .vi { color: #008080 } /* Name.Variable.Instance */
-.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+/* Comment 
+
+    <span class="highlight"><span class="c">example</span></span>
+*/
+
+.highlight .c { color: #999988; font-style: italic }
+/* Error 
+
+    <span class="highlight"><span class="err">example</span></span>
+*/
+
+.highlight .err { color: #a61717; background-color: #e3d2d2 }
+/* Keyword 
+
+    <span class="highlight"><span class="k">example</span></span>
+*/
+
+.highlight .k { font-weight: bold }
+/* Operator 
+
+    <span class="highlight"><span class="o">example</span></span>
+*/
+
+.highlight .o { font-weight: bold }
+/* Comment.Multiline 
+
+    <span class="highlight"><span class="cm">example</span></span>
+*/
+
+.highlight .cm { color: #999988; font-style: italic }
+/* Comment.Preproc 
+
+    <span class="highlight"><span class="cp">example</span></span>
+*/
+
+.highlight .cp { color: #999999; font-weight: bold }
+/* Comment.Single 
+
+    <span class="highlight"><span class="c1">example</span></span>
+*/
+
+.highlight .c1 { color: #999988; font-style: italic }
+/* Comment.Special 
+
+    <span class="highlight"><span class="cs">example</span></span>
+*/
+
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic }
+/* Generic.Deleted 
+
+    <span class="highlight"><span class="gd">example</span></span>
+*/
+
+.highlight .gd { color: #000000; background-color: #ffdddd }
+/* Generic.Deleted.Specific 
+
+    <span class="highlight"><span class="gd .x">example</span></span>
+*/
+
+.highlight .gd .x { color: #000000; background-color: #ffaaaa }
+/* Generic.Emph 
+
+    <span class="highlight"><span class="ge">example</span></span>
+*/
+
+.highlight .ge { font-style: italic }
+/* Generic.Error 
+
+    <span class="highlight"><span class="gr">example</span></span>
+*/
+
+.highlight .gr { color: #aa0000 }
+/* Generic.Heading 
+
+    <span class="highlight"><span class="gh">example</span></span>
+*/
+
+.highlight .gh { color: #999999 }
+/* Generic.Inserted 
+
+    <span class="highlight"><span class="gi">example</span></span>
+*/
+
+.highlight .gi { color: #000000; background-color: #ddffdd }
+/* Generic.Inserted.Specific 
+
+    <span class="highlight"><span class="gi .x">example</span></span>
+*/
+
+.highlight .gi .x { color: #000000; background-color: #aaffaa }
+/* Generic.Output 
+
+    <span class="highlight"><span class="go">example</span></span>
+*/
+
+.highlight .go { color: #888888 }
+/* Generic.Prompt 
+
+    <span class="highlight"><span class="gp">example</span></span>
+*/
+
+.highlight .gp { color: #555555 }
+/* Generic.Strong 
+
+    <span class="highlight"><span class="gs">example</span></span>
+*/
+
+.highlight .gs { font-weight: bold }
+/* Generic.Subheading 
+
+    <span class="highlight"><span class="gu">example</span></span>
+*/
+
+.highlight .gu { color: #aaaaaa }
+/* Generic.Traceback 
+
+    <span class="highlight"><span class="gt">example</span></span>
+*/
+
+.highlight .gt { color: #aa0000 }
+/* Keyword.Constant 
+
+    <span class="highlight"><span class="kc">example</span></span>
+*/
+
+.highlight .kc { font-weight: bold }
+/* Keyword.Declaration 
+
+    <span class="highlight"><span class="kd">example</span></span>
+*/
+
+.highlight .kd { font-weight: bold }
+/* Keyword.Pseudo 
+
+    <span class="highlight"><span class="kp">example</span></span>
+*/
+
+.highlight .kp { font-weight: bold }
+/* Keyword.Reserved 
+
+    <span class="highlight"><span class="kr">example</span></span>
+*/
+
+.highlight .kr { font-weight: bold }
+/* Keyword.Type 
+
+    <span class="highlight"><span class="kt">example</span></span>
+*/
+
+.highlight .kt { color: #445588; font-weight: bold }
+/* Literal.Number 
+
+    <span class="highlight"><span class="m">example</span></span>
+*/
+
+.highlight .m { color: #009999 }
+/* Literal.String 
+
+    <span class="highlight"><span class="s">example</span></span>
+*/
+
+.highlight .s { color: #d14 }
+/* Name.Attribute 
+
+    <span class="highlight"><span class="na">example</span></span>
+*/
+
+.highlight .na { color: #008080 }
+/* Name.Builtin 
+
+    <span class="highlight"><span class="nb">example</span></span>
+*/
+
+.highlight .nb { color: #0086B3 }
+/* Name.Class 
+
+    <span class="highlight"><span class="nc">example</span></span>
+*/
+
+.highlight .nc { color: #445588; font-weight: bold }
+/* Name.Constant 
+
+    <span class="highlight"><span class="no">example</span></span>
+*/
+
+.highlight .no { color: #008080 }
+/* Name.Entity 
+
+    <span class="highlight"><span class="ni">example</span></span>
+*/
+
+.highlight .ni { color: #800080 }
+/* Name.Exception 
+
+    <span class="highlight"><span class="ne">example</span></span>
+*/
+
+.highlight .ne { color: #990000; font-weight: bold }
+/* Name.Function 
+
+    <span class="highlight"><span class="nf">example</span></span>
+*/
+
+.highlight .nf { color: #990000; font-weight: bold }
+/* Name.Namespace 
+
+    <span class="highlight"><span class="nn">example</span></span>
+*/
+
+.highlight .nn { color: #555555 }
+/* Name.Tag 
+
+    <span class="highlight"><span class="nt">example</span></span>
+*/
+
+.highlight .nt { color: #000080 }
+/* Name.Variable 
+
+    <span class="highlight"><span class="nv">example</span></span>
+*/
+
+.highlight .nv { color: #008080 }
+/* Operator.Word 
+
+    <span class="highlight"><span class="ow">example</span></span>
+*/
+
+.highlight .ow { font-weight: bold }
+/* Text.Whitespace 
+
+    <span class="highlight"><span class="w">example</span></span>
+*/
+
+.highlight .w { color: #bbbbbb }
+/* Literal.Number.Float 
+
+    <span class="highlight"><span class="mf">example</span></span>
+*/
+
+.highlight .mf { color: #009999 }
+/* Literal.Number.Hex 
+
+    <span class="highlight"><span class="mh">example</span></span>
+*/
+
+.highlight .mh { color: #009999 }
+/* Literal.Number.Integer 
+
+    <span class="highlight"><span class="mi">example</span></span>
+*/
+
+.highlight .mi { color: #009999 }
+/* Literal.Number.Oct 
+
+    <span class="highlight"><span class="mo">example</span></span>
+*/
+
+.highlight .mo { color: #009999 }
+/* Literal.String.Backtick 
+
+    <span class="highlight"><span class="sb">example</span></span>
+*/
+
+.highlight .sb { color: #d14 }
+/* Literal.String.Char 
+
+    <span class="highlight"><span class="sc">example</span></span>
+*/
+
+.highlight .sc { color: #d14 }
+/* Literal.String.Doc 
+
+    <span class="highlight"><span class="sd">example</span></span>
+*/
+
+.highlight .sd { color: #d14 }
+/* Literal.String.Double 
+
+    <span class="highlight"><span class="s2">example</span></span>
+*/
+
+.highlight .s2 { color: #d14 }
+/* Literal.String.Escape 
+
+    <span class="highlight"><span class="se">example</span></span>
+*/
+
+.highlight .se { color: #d14 }
+/* Literal.String.Heredoc 
+
+    <span class="highlight"><span class="sh">example</span></span>
+*/
+
+.highlight .sh { color: #d14 }
+/* Literal.String.Interpol 
+
+    <span class="highlight"><span class="si">example</span></span>
+*/
+
+.highlight .si { color: #d14 }
+/* Literal.String.Other 
+
+    <span class="highlight"><span class="sx">example</span></span>
+*/
+
+.highlight .sx { color: #d14 }
+/* Literal.String.Regex 
+
+    <span class="highlight"><span class="sr">example</span></span>
+*/
+
+.highlight .sr { color: #009926 }
+/* Literal.String.Single 
+
+    <span class="highlight"><span class="s1">example</span></span>
+*/
+
+.highlight .s1 { color: #d14 }
+/* Literal.String.Symbol 
+
+    <span class="highlight"><span class="ss">example</span></span>
+*/
+
+.highlight .ss { color: #990073 }
+/* Name.Builtin.Pseudo 
+
+    <span class="highlight"><span class="bp">example</span></span>
+*/
+
+.highlight .bp { color: #999999 }
+/* Name.Variable.Class 
+
+    <span class="highlight"><span class="vc">example</span></span>
+*/
+
+.highlight .vc { color: #008080 }
+/* Name.Variable.Global 
+
+    <span class="highlight"><span class="vg">example</span></span>
+*/
+
+.highlight .vg { color: #008080 }
+/* Name.Variable.Instance 
+
+    <span class="highlight"><span class="vi">example</span></span>
+*/
+
+.highlight .vi { color: #008080 }
+/* Literal.Number.Integer.Long 
+
+    <span class="highlight"><span class="il">example</span></span>
+*/
+
+.highlight .il { color: #009999 }

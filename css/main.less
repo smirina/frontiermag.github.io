@@ -1,5 +1,20 @@
+/* #Основные стили */
+
+/* Квадратные буллиты для списков по умолчанию
+
+    <ul>
+        <li>first
+        <li>second
+        <li>third
+    </ul>
+ */
 ul { list-style-type: square;}
 
+
+/* Большой хедер
+
+    <a class="site-header" href="#">«Фронтир»</a>
+*/
 a.site-header {
   display: block;
   margin: 0 auto;
@@ -10,6 +25,10 @@ a.site-header {
   &:hover { text-decoration: none; }
 }
 
+/* Контейнер. Ограничиваем ширину в 60 символов — удобство чтения
+
+    <div class="page-content">qwertyuiopasdfghjklzxcvbnmnbvcxzlkjhgfdsapoiuytrewqwertyuio</div>
+*/
 .page-content {
   width: 90%;
   margin: 0 auto;
@@ -17,6 +36,14 @@ a.site-header {
   vertical-align: top;
 }
 
+
+/* Футер
+
+    <div class="site-footer">
+      <span class="site-footer-name">«Фронтир»</span>
+      <small>дивный мир фронтенда</small>
+    </div>
+ */
 .site-footer {
   padding: 2rem 1rem;
   margin: 0 auto;
@@ -25,6 +52,7 @@ a.site-header {
   text-align: center;
   vertical-align: middle;
 }
+
 
 .site-footer-name { display: block; margin-top: .7rem; margin-bottom: -.3rem;}
 .site-footer small { font-size: .8rem; }

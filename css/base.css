@@ -1,6 +1,4 @@
-/* Base */
-/* ----------------------------------------------------------*/
-
+/* box-sizing: inherit лучше, потому что позволяет делать модули со старым бокс-сайзингом*/
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +6,7 @@
   box-sizing: inherit;
 }
 
+/* Стопроцентная ширина и высота для удобства, border-box рулит*/
 html, body { height: 100%; width: 100%; box-sizing: border-box; }
 
 body {
@@ -19,6 +18,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
+
+/* Простые стили для ссылок, без подчёркивания
+
+:hover — подчёркиваем при наведении
+:visited — меняем цвет (юзабилити) →
+    <a href="#">ссылка</a>
+*/
 a         { color: #2a7ae2; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
 a:visited { color: #205caa; }
