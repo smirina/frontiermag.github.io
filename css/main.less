@@ -1,63 +1,16 @@
-/* #Основные стили */
-
-/* Квадратные буллиты для списков по умолчанию
-
-    <ul>
-        <li>first
-        <li>second
-        <li>third
-    </ul>
- */
-ul { list-style-type: square;}
-
-
-/* Большой хедер
-
-    <a class="site-header" href="#">«Фронтир»</a>
-*/
-a.site-header {
-  display: block;
-  margin: 0 auto;
-  color: #000;
-  font: 3em/1.5 Georgia, serif;
-  width: 90vw;
-  text-align: center;
-  &:hover { text-decoration: none; }
-}
-
-/* Контейнер. Ограничиваем ширину в 40 символов — удобство чтения
-
-    <div class="page-content">qwertyuiopasdfghjklzxcvbnmnbvcxzlkjhgfdsapoiuytrewqwertyuio</div>
-*/
-.page-content {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 40em;
+/* #Главная страница*/
+.main-posts {
+  list-style: none;
   vertical-align: top;
+  margin-bottom: 2rem;
 }
-
-
-/* Футер
-
-    <div class="site-footer">
-      <span class="site-footer-name">«Фронтир»</span>
-      <small>дивный мир фронтенда</small>
-    </div>
- */
-.site-footer {
-  padding: 2rem 1rem;
-  margin: 0 auto;
-  font-size: 1.5rem;
-  width: 100vh;
-  text-align: center;
-  vertical-align: middle;
+.main-post {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
 }
-
-
-.site-footer-name { display: block; margin-top: .7rem; margin-bottom: -.3rem;}
-.site-footer small { font-size: .8rem; }
-
-.main-header {
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
+@media (min-width: 768px) {
+  .main-post {
+    display: inline-block;
+    width: 100%;
+  }
 }
