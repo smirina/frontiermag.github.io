@@ -1,10 +1,11 @@
 # Site settings
 title: Фронтир
 email: marinintim@gmail.com
-description: "Журнал про фронтенд-разработку, её будни и праздники."
+description: "Журнал про веб."
 baseurl: ""
 url: "http://frontiermag.ru"
 
 # Build settings
 markdown: kramdown
 permalink: none
+future: true

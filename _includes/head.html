@@ -1,5 +1,4 @@
 <head>
-    <!--Привет! Если хочешь опубликовать статью на Фронтире, то пиши на marinintim@gmail.com-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -8,11 +7,10 @@
     <meta name="keywords" content="html5, javascript, css, frontend, вёрстка, журнал Фронтир">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="stylesheet" href="{{ "/css/base.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet/less" href="{{ "/css/main.less" | prepend: site.baseurl }}">
-    <link rel="stylesheet/less" href="{{ "/css/post.less" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/helpers.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/highlight.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet/less" href="{{ "/css/index-posts.less" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/post.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/mainpage.css" | prepend: site.baseurl }}">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic' rel='stylesheet'>
     <link rel="alternate" type="application/atom+xml" title="RSS-версия Фронтира" href="/feed.xml">
     <!--[if lt IE 9]>
     <script>

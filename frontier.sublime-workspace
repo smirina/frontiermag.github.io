@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"en",
+				"encodeURIComponent"
+			],
+			[
+				"e",
+				"encodeURIComponent"
+			],
+			[
 				"li",
 				"lis-n	list-style: none;"
 			],
@@ -60,59 +72,101 @@
 	"buffers":
 	[
 		{
-			"file": "css/main.less",
+			"file": "_layouts/default.html",
 			"settings":
 			{
-				"buffer_size": 255,
+				"buffer_size": 51,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "editor/index.html",
+			"file": "_includes/head.html",
 			"settings":
 			{
-				"buffer_size": 928,
+				"buffer_size": 2584,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/page.html",
+			"settings":
+			{
+				"buffer_size": 166,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/post.html",
+			"settings":
+			{
+				"buffer_size": 767,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/header.html",
+			"settings":
+			{
+				"buffer_size": 422,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-10-02-five-reasons-seo.markdown",
+			"settings":
+			{
+				"buffer_size": 378,
 				"line_ending": "Unix",
-				"name": "---"
+				"name": "2014-10-02-five-reasons-seo.markdown"
 			}
 		},
 		{
-			"file": "editor/editor.css",
+			"file": "_config.yml",
 			"settings":
 			{
-				"buffer_size": 659,
+				"buffer_size": 196,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/styleguide.md",
+			"file": "_posts/2014-06-23-you-re-already-good-designer.markdown",
 			"settings":
 			{
-				"buffer_size": 575,
+				"buffer_size": 12567,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/post.less",
+			"file": "css/mainpage.css",
 			"settings":
 			{
-				"buffer_size": 1688,
+				"buffer_size": 338,
+				"line_ending": "Unix",
+				"name": "mainpage.css"
+			}
+		},
+		{
+			"file": "_includes/footer.html",
+			"settings":
+			{
+				"buffer_size": 846,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_posts/2014-07-23-email-first.markdown",
+			"file": "css/base.css",
 			"settings":
 			{
-				"buffer_size": 2333,
-				"line_ending": "Unix"
+				"buffer_size": 1590,
+				"line_ending": "Unix",
+				"name": "base.css"
 			}
 		},
 		{
-			"file": "_site/mobile-internet-explorer-userstring.html",
+			"file": "/home/tim/dev/mistype/index.js",
 			"settings":
 			{
-				"buffer_size": 9077,
+				"buffer_size": 3260,
 				"line_ending": "Unix"
 			}
 		},
@@ -125,143 +179,66 @@
 			}
 		},
 		{
-			"file": "css/tiles.less",
+			"file": "css/post.css",
 			"settings":
 			{
-				"buffer_size": 1580,
-				"line_ending": "Unix"
+				"buffer_size": 634,
+				"line_ending": "Unix",
+				"name": "post.css"
 			}
 		},
 		{
-			"file": "scripts/vk-comments.js",
+			"file": "_posts/2014-11-01-cheese.markdown",
 			"settings":
 			{
-				"buffer_size": 3673,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_layouts/default.html",
-			"settings":
-			{
-				"buffer_size": 143,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_layouts/page.html",
-			"settings":
-			{
-				"buffer_size": 187,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_layouts/post.html",
-			"settings":
-			{
-				"buffer_size": 1099,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2014-08-14-app-vs-content.markdown",
-			"settings":
-			{
-				"buffer_size": 1471,
+				"buffer_size": 3398,
 				"line_ending": "Unix",
 				"name": "---"
-			}
-		},
-		{
-			"file": "_posts/2014-06-20-hello-world.markdown",
-			"settings":
-			{
-				"buffer_size": 401,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_posts/2014-06-22-javascript-cryptography.markdown",
-			"settings":
-			{
-				"buffer_size": 18104,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_includes/head.html",
-			"settings":
-			{
-				"buffer_size": 2698,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_config.yml",
-			"settings":
-			{
-				"buffer_size": 222,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/tim/dev/quotesofgreatpeople/index.js",
-			"settings":
-			{
-				"buffer_size": 1565,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "_posts/2014-09-09-small-files.markdown",
 			"settings":
 			{
-				"buffer_size": 692,
+				"buffer_size": 1001,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-10-10-printable-html.markdown",
+			"settings":
+			{
+				"buffer_size": 510,
 				"line_ending": "Unix",
-				"name": "---"
+				"name": "2014-11-10-printable-html.markdown"
 			}
 		},
 		{
-			"file": "authors/index.html",
-			"settings":
-			{
-				"buffer_size": 243,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/tim/dev/quotesofgreatpeople/index.html",
-			"settings":
-			{
-				"buffer_size": 1033,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/base.css",
-			"settings":
-			{
-				"buffer_size": 782,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/post.css",
-			"settings":
-			{
-				"buffer_size": 1816,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js lt-ie9 lt-ie8 lt-ie7\" lang=\"en\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js lt-ie9 lt-ie8\" lang=\"en\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js lt-ie9\" lang=\"en\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en\"> <!--<![endif]-->\n<head>\n  <meta charset=\"utf-8\">\n  <title>Стайлгайд «Фронтира»</title>\n\n  <meta name=\"description\" content=\"\">\n  <meta name=\"generator\" content=\"kss-node\" />\n  <meta name=\"viewport\" content=\"width=device-width, minimal-ui\">\n\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"http://fonts.googleapis.com/css?family=Droid+Serif\">\n  <link rel=\"stylesheet\" href=\"public/kss.css\">\n  <link rel=\"stylesheet\" href=\"public/style.css\">\n</head>\n<body><div id=\"kss-wrapper\">\n\n<div id=\"kss-nav\">\n  <header id=\"kss-header\">\n    <hgroup><h1>Гайд «Фронтира»</h1></hgroup>\n  </header>\n  <aside>\n    <nav><ul>\n      <li><a href=\"index.html\">0.0: Overview</a></li>\n    {{#eachRoot}}\n      <li><a href=\"section-{{reference}}.html\">{{reference}}.0: {{header}}</a></li>\n    {{/eachRoot}}\n    </ul></nav>\n  </aside>\n</div>\n<div role=\"main\" id=\"kss-main\">\n  <article id=\"kss-content\">\n  {{#if overview}}\n    {{{overview}}}\n  {{else}}\n\n    {{!\n      Find each section, in order.\n      If there's no markup or modifiers supplied, use a Markdown-only\n      layout instead.\n\n      The \"root\" element comes first in this loop, and can be detected using\n      the \"#ifDepth 1\" block as seen below.\n    }}\n    {{#eachSection rootNumber}}\n      {{#unlessDepth 1}}\n      <section class=\"kss-depth-{{ refDepth }}\">\n      {{/unlessDepth}}\n\n      <h1 class=\"kss-title\"><span class=\"kss-ref\">{{ reference }}{{#ifDepth 1}}.0{{/ifDepth}}</span> - {{ header }}</h1>\n\n      {{#if description}}\n        <div class=\"kss-box\">{{{description}}}</div>\n      {{/if}}\n\n      {{#if markup}}\n        <table class=\"kss-mod-list\">\n          <tr class=\"kss-mod-desc-group\">\n            <td class=\"kss-mod-desc\"><p>Default styling</p></td>\n            <td class=\"kss-mod-name\"></td>\n          </tr>\n          <tr class=\"kss-mod-example\">\n            <td colspan=\"2\">{{modifierMarkup}}</td>\n          </tr>\n        {{#eachModifier}}\n          <tr class=\"kss-mod-desc-group\">\n            <td class=\"kss-mod-desc\">{{{description}}}</td>\n            <td class=\"kss-mod-name\"><p>{{name}}</p></td>\n          </tr>\n          <tr class=\"kss-mod-example\">\n            <td colspan=\"2\">{{modifierMarkup}}</td>\n          </tr>\n        {{/eachModifier}}\n        </table>\n\n        <div class=\"kss-markup\">\n          <pre class=\"prettyprint lang-html\">{{markup}}</pre>\n        </div>\n      {{/if}}\n\n      {{#unlessDepth 1}}\n      </section>\n      {{/unlessDepth}}\n    {{/eachSection}}\n  {{/if}}\n  </article>\n</div>\n\n<!-- SCRIPTS -->\n<script src=\"public/kss.js\"></script>\n<script src=\"public/prettify.js\"></script>\n<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js\"></script>\n<script>\n  $(document).ready(function(){\n    var sidebarAdjust = function() {\n      // Match footer/body height\n      var height = Math.max($(window).height(), $('#kss-main').height());\n\n      if ($(window).width() <= 768) {\n        $('#kss-main, #kss-nav').height('auto');\n      } else {\n        $('#kss-main, #kss-nav').height(height);\n      }\n    };\n\n    $(window).resize(sidebarAdjust);\n    $(window).scroll(sidebarAdjust);\n    sidebarAdjust();\n\n    // Ensure code blocks are highlighted properly...\n    $('pre>code').addClass('prettyprint');\n    prettyPrint();\n  });\n</script>\n\n</div></body>\n</html>\n",
-			"file": "styleguide-template/index.html",
+			"contents": "<!doctype html>\n<meta charset=\"utf-8\">\n<h1>Hello there, citizen!</h1>\n\n<script src=\"./typo.js\">{\n    \"id\": 3\n}</script>",
+			"file": "typo/index.html",
 			"file_size": -1,
 			"file_write_time": -1,
 			"settings":
 			{
-				"buffer_size": 3549,
+				"buffer_size": 119,
+				"line_ending": "Unix",
+				"name": "<!doctype html>"
+			}
+		},
+		{
+			"file": "_layouts/biweekly.html",
+			"settings":
+			{
+				"buffer_size": 1808,
+				"line_ending": "Unix",
+				"name": "biweekly.html"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1168,
 				"line_ending": "Unix"
 			}
 		},
@@ -288,9 +265,29 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 72.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"color p",
+				"Color Picker"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"emmet image",
 				"Emmet: Encode\\Decode Image to data:URL"
@@ -298,10 +295,6 @@
 			[
 				"emmet ima",
 				"Emmet: Encode\\Decode Image to data:URL"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"twi",
@@ -348,7 +341,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 449.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -368,12 +361,60 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/home/tim/frontier",
+		"/home/tim/frontier/_includes",
+		"/home/tim/frontier/_layouts",
+		"/home/tim/frontier/_posts",
+		"/home/tim/frontier/css"
+	],
 	"file_history":
 	[
+		"/home/tim/frontier-ng/contents/about.md",
+		"/home/tim/dev/marinintim.github.io/index.html",
+		"/home/tim/dev/timlinks/index.js",
+		"/home/tim/dev/mistype/typo.js",
+		"/home/tim/frontier/css/highlight.css",
+		"/home/tim/frontier/editor/bower_components/bootstrap/js/collapse.js",
+		"/home/tim/frontier/_config.yml",
+		"/home/tim/frontier/CNAME",
+		"/home/tim/frontier/typo/typo.js",
 		"/home/tim/frontier/authors/index.html",
+		"/home/tim/frontier/docs/main.html",
+		"/home/tim/frontier/css/base.css",
+		"/home/tim/frontier/css/index-posts.css",
+		"/home/tim/frontier/css/index-posts.less",
+		"/home/tim/frontier/css/post.less",
+		"/home/tim/frontier/css/post.css",
+		"/home/tim/frontier/css/helpers.css",
+		"/home/tim/.config/sublime-text-3/Packages/WordCount/WordCount.sublime-settings",
+		"/home/tim/.config/sublime-text-3/Packages/User/WordCount.sublime-settings",
+		"/home/tim/frontier/styleguide-template/index.html",
+		"/home/tim/frontier/biweekly/success.html",
+		"/home/tim/frontier/biweekly/confirm.html",
+		"/home/tim/frontier/biweekly/archive.html",
+		"/home/tim/frontier/biweekly/index.html",
+		"/home/tim/dev/quotesofgreatpeople/index.html",
+		"/home/tim/frontier/_posts/2014-09-09-small-files.markdown",
+		"/home/tim/dev/quotesofgreatpeople/index.js",
+		"/home/tim/frontier/_includes/head.html",
+		"/home/tim/frontier/_posts/2014-06-22-javascript-cryptography.markdown",
+		"/home/tim/frontier/_posts/2014-06-20-hello-world.markdown",
+		"/home/tim/frontier/_posts/2014-08-14-app-vs-content.markdown",
+		"/home/tim/frontier/_layouts/post.html",
+		"/home/tim/frontier/_layouts/page.html",
+		"/home/tim/frontier/scripts/vk-comments.js",
+		"/home/tim/frontier/css/main.less",
+		"/home/tim/frontier/editor/index.html",
+		"/home/tim/frontier/editor/editor.css",
+		"/home/tim/frontier/css/styleguide.md",
+		"/home/tim/frontier/_posts/2014-07-23-email-first.markdown",
+		"/home/tim/frontier/_site/mobile-internet-explorer-userstring.html",
+		"/home/tim/frontier/_posts/2014-08-07-mobile-internet-explorer-userstring.markdown",
+		"/home/tim/frontier/css/tiles.less",
 		"/home/tim/frontier/human/index.html",
 		"/home/tim/frontier/index.html",
-		"/home/tim/frontier/css/index-posts.less",
 		"/home/tim/frontier/saloon/index.html",
 		"/home/tim/frontier/editor/bower_components/bootstrap/js/popover.js",
 		"/home/tim/frontier/_site/professional-under-pressure.html",
@@ -387,11 +428,8 @@
 		"/home/tim/frontier/editor/bower_components/jquery/src/dimensions.js",
 		"/home/tim/frontier/editor/bower_components/bootstrap/js/dropdown.js",
 		"/home/tim/frontier/saloon/bower_components/bootstrap/less/responsive-embed.less",
-		"/home/tim/frontier/css/helpers.css",
 		"/home/tim/frontier/_includes/header.html",
-		"/home/tim/frontier/css/highlight.css",
 		"/home/tim/frontier/_site/jsonstub-and-others.html",
-		"/home/tim/frontier/css/post.less",
 		"/home/tim/frontier/_site/authors/index.html",
 		"/home/tim/frontier/about.md",
 		"/home/tim/frontier/_posts/2014-06-25-jsonstub-and-others.markdown",
@@ -410,21 +448,14 @@
 		"/home/tim/frontier/recipes/vk.html",
 		"/home/tim/frontier/_site/you-re-already-good-designer.html",
 		"/home/tim/frontier/feed.xml",
-		"/home/tim/frontier/css/tiles.less",
 		"/home/tim/frontier/_site/hello-world.html",
 		"/home/tim/frontier/css/tiles.css",
-		"/home/tim/frontier/css/base.css",
 		"/home/tim/frontier/img/outdoor-icons-large.png",
-		"/home/tim/frontier/_posts/2014-06-22-javascript-cryptography.markdown",
 		"/home/tim/frontier/_posts/2014-06-21-inline-block.markdown",
 		"/home/tim/dev/vk-irc/Gruntfile.js",
 		"/home/tim/frontier/_posts/2014-06-22-bad-work.markdown",
 		"/home/tim/frontier/_layouts/default.html",
-		"/home/tim/frontier/_includes/head.html",
-		"/home/tim/frontier/_config.yml",
-		"/home/tim/frontier/_layouts/post.html",
 		"/home/tim/frontier/css/main.css",
-		"/home/tim/frontier/_posts/2014-06-20-hello-world.markdown",
 		"/home/tim/frontier/_posts/2014-06-21-w3cschools.markdown",
 		"/home/tim/dev/bearlog/siteConfig.js",
 		"/home/tim/dev/bearlog/app/index.js",
@@ -467,37 +498,7 @@
 		"/home/tim/golang/src/github.com/marinintim/devops/main.go",
 		"/home/tim/public_html/agenda/css/main.css",
 		"/home/tim/public_html/actimind/public/index.html",
-		"/home/tim/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-		"/home/tim/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
-		"/home/tim/public_html/actimind/public/js/Models/Country.js",
-		"/home/tim/public_html/actimind/public/css/main.css",
-		"/home/tim/public_html/actimind/public/js/Collections/Country.coffee",
-		"/home/tim/public_html/actimind/public/css/normalize.min.css",
-		"/home/tim/public_html/actimind/public/Cakefile",
-		"/home/tim/public_html/actimind/public/js/Models/Address.coffee",
-		"/home/tim/public_html/actimind/public/js/Views/Form.coffee",
-		"/home/tim/public_html/actimind/public/js/Views/CreditCard.coffee",
-		"/home/tim/public_html/actimind/public/js/Views/Address.coffee",
-		"/home/tim/public_html/actimind/public/js/Models/Country.coffee",
-		"/home/tim/public_html/actimind/public/js/Models/PurchaseRequest.coffee",
-		"/home/tim/public_html/actimind/public/js/Models/CreditCard.coffee",
-		"/home/tim/public_html/frontiermag/marinintim.github.io/index.html",
-		"/home/tim/public_html/actimind/public/js/main.coffee",
-		"/home/tim/public_html/actimind/public/js/Views/Summary.coffee",
-		"/home/tim/public_html/actimind/public/js/Views/Global.coffee",
-		"/home/tim/public_html/actimind/public/js/Views/Error.coffee",
-		"/home/tim/public_html/actimind/public/js/Collections/Address.coffee",
-		"/home/tim/public_html/actimind/public/js/Views/Global.js",
-		"/home/tim/public_html/actimind/public/js/vendor/backbone.js",
-		"/home/tim/public_html/actimind/public/js/Collections/CreditCard.coffee",
-		"/home/tim/public_html/actimind/public/.gitignore",
-		"/home/tim/public_html/actimind/public/.gitattributes",
-		"/home/tim/public_html/actimind/public/templates/address.html",
-		"/home/tim/public_html/actimind/public/js/Collections/Abstract.coffee",
-		"/home/tim/public_html/actimind/public/js/Models/CreditCard.js",
-		"/home/tim/public_html/actimind/public/js/Models/Nested.coffee",
-		"/home/tim/public_html/actimind/public/js/Models/Nested.js",
-		"/home/tim/.config/sublime-text-3/Packages/User/JSON.sublime-settings"
+		"/home/tim/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
 	],
 	"find":
 	{
@@ -523,9 +524,16 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"tag",
+			"TypoThere",
+			"stylesheet",
+			"highlight",
+			">\n",
+			"style=\"word-wrap:break-word;color:#6dc6dd;font-weight:normal;text-decoration:underline\"",
+			";}\n",
 			"stylesheet/css",
 			"less",
 			"content",
@@ -651,9 +659,11 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"Mistype",
+			"",
 			"stylesheet",
 			"css",
 			"c",
@@ -713,28 +723,426 @@
 	"groups":
 	[
 		{
-			"selected": 23,
+			"selected": 12,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "css/main.less",
+					"file": "_layouts/default.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 255,
+						"buffer_size": 51,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								248,
-								248
+								51,
+								51
 							]
 						],
 						"settings":
 						{
+							"WordCountSyntax": "html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1175,
+								1175
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "html",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_layouts/page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_layouts/post.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								320,
+								320
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "html",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_includes/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_posts/2014-10-02-five-reasons-seo.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "plain text",
+							"auto_name": "2014-10-02-five-reasons-seo.markdown",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "yaml",
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_posts/2014-06-23-you-re-already-good-designer.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12567,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "markdown",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "css/mainpage.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "plain text",
+							"auto_name": "mainpage.css",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "_includes/footer.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "html",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "css/base.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								172,
+								172
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"WordCountSyntax": "css",
+							"auto_name": "base.css",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 84.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/home/tim/dev/mistype/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"WordCountSyntax": "javascript",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "_posts/2014-08-07-mobile-internet-explorer-userstring.markdown",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4659,
+								4659
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "markdown",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1242.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "css/post.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								567,
+								567
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "plain text",
+							"auto_name": "post.css",
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -747,462 +1155,91 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "editor/index.html",
+					"buffer": 14,
+					"file": "_posts/2014-11-01-cheese.markdown",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 928,
+						"buffer_size": 3398,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								438,
-								438
+								180,
+								180
 							]
 						],
 						"settings":
 						{
+							"WordCountSyntax": "markdown",
 							"auto_name": "---",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "editor/editor.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 659,
-						"regions":
-						{
-						},
-						"selection":
-						[
+							"rulers":
 							[
-								524,
-								524
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "css/styleguide.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 575,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								244,
-								244
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "css/post.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1688,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1516,
-								1516
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2590.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "_posts/2014-07-23-email-first.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2333,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								155,
-								155
-							]
-						],
-						"settings":
-						{
+								80
+							],
 							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "_site/mobile-internet-explorer-userstring.html",
+					"buffer": 15,
+					"file": "_posts/2014-09-09-small-files.markdown",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9077,
+						"buffer_size": 1001,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								975,
+								975
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 40642.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "_posts/2014-08-07-mobile-internet-explorer-userstring.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4659,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								197,
-								197
-							]
-						],
-						"settings":
-						{
+							"WordCountSyntax": "markdown",
 							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "css/tiles.less",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1580,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1572,
-								1572
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "scripts/vk-comments.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3673,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2789,
-								2789
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 618.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "_layouts/default.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 143,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								65,
-								65
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 26,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "_layouts/page.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 187,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "_layouts/post.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1099,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								917,
-								917
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 42.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "_posts/2014-08-14-app-vs-content.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1471,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								116,
-								116
-							]
-						],
-						"settings":
-						{
-							"auto_name": "---",
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "_posts/2014-06-20-hello-world.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 401,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								171,
-								171
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "_posts/2014-06-22-javascript-cryptography.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18104,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								176,
-								176
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
 					"buffer": 16,
-					"file": "_includes/head.html",
+					"file": "_posts/2014-10-10-printable-html.markdown",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2698,
+						"buffer_size": 510,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1204,
-								1204
+								510,
+								510
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "markdown",
+							"auto_name": "2014-11-10-printable-html.markdown",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1213,139 +1250,86 @@
 				},
 				{
 					"buffer": 17,
-					"file": "_config.yml",
+					"file": "typo/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 222,
+						"buffer_size": 119,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								108,
+								108
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "/home/tim/dev/quotesofgreatpeople/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1565,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1451,
-								1451
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 42.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "_posts/2014-09-09-small-files.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 692,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								288,
-								288
-							]
-						],
-						"settings":
-						{
-							"auto_name": "---",
-							"spell_check": false,
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "authors/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 243,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3,
-								3
-							]
-						],
-						"settings":
-						{
+							"WordCountSyntax": "plain text",
+							"auto_name": "<!doctype html>",
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
-					"file": "/home/tim/dev/quotesofgreatpeople/index.html",
+					"buffer": 18,
+					"file": "_layouts/biweekly.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1033,
+						"buffer_size": 1808,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								1759,
+								1759
 							]
 						],
 						"settings":
 						{
+							"WordCountSyntax": "html",
+							"auto_name": "biweekly.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								751,
+								751
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "html",
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1358,97 +1342,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 22,
-					"file": "css/base.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 782,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								614,
-								614
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "css/post.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1816,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16,
-								7
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "styleguide-template/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3549,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2757,
-								2757
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 210.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
+					"buffer": 20,
 					"file": "morning/index.markdown",
 					"semi_transient": false,
 					"settings":
@@ -1466,17 +1360,18 @@
 						],
 						"settings":
 						{
+							"WordCountSyntax": "markdown",
 							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 26,
+					"buffer": 21,
 					"file": "_site/app-vs-content.html",
 					"semi_transient": false,
 					"settings":
@@ -1502,7 +1397,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 21,
 					"type": "text"
 				}
 			]
@@ -1563,6 +1458,70 @@
 		"selected_items":
 		[
 			[
+				"base",
+				"css/base.css"
+			],
+			[
+				"bas",
+				"css/base.css"
+			],
+			[
+				"header",
+				"_includes/header.html"
+			],
+			[
+				"footer",
+				"_includes/footer.html"
+			],
+			[
+				"ma",
+				"css/mainpage.css"
+			],
+			[
+				"main",
+				"css/mainpage.css"
+			],
+			[
+				"",
+				"_posts/2014-09-09-small-files.markdown"
+			],
+			[
+				"post",
+				"_layouts/post.html"
+			],
+			[
+				"post.cs",
+				"css/post.css"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"mainpage",
+				"css/mainpage.css"
+			],
+			[
+				"post.css",
+				"css/post.css"
+			],
+			[
+				"b",
+				"css/base.css"
+			],
+			[
+				"foo",
+				"_includes/footer.html"
+			],
+			[
+				"fo",
+				"_includes/footer.html"
+			],
+			[
+				"foot",
+				"_includes/footer.html"
+			],
+			[
 				"index.js",
 				"~/dev/quotesofgreatpeople/index.js"
 			],
@@ -1583,20 +1542,12 @@
 				"css/post.less"
 			],
 			[
-				"post",
-				"_layouts/post.html"
-			],
-			[
 				"readm",
 				"README.md"
 			],
 			[
 				"head",
 				"_includes/head.html"
-			],
-			[
-				"main",
-				"css/main.less"
 			],
 			[
 				"he",
@@ -1607,16 +1558,8 @@
 				"css/helpers.css"
 			],
 			[
-				"base",
-				"css/base.css"
-			],
-			[
 				"st",
 				"css/styleguide.md"
-			],
-			[
-				"bas",
-				"css/base.css"
 			],
 			[
 				"sty",
@@ -1655,10 +1598,6 @@
 				"_posts/2014-08-14-app-vs-content.markdown"
 			],
 			[
-				"footer",
-				"_includes/footer.html"
-			],
-			[
 				"user",
 				"_posts/2014-08-07-mobile-internet-explorer-userstring.markdown"
 			],
@@ -1681,10 +1620,6 @@
 			[
 				"index.less",
 				"css/index.less"
-			],
-			[
-				"foot",
-				"_includes/footer.html"
 			],
 			[
 				"swi",
@@ -1711,10 +1646,6 @@
 				"css/index.less"
 			],
 			[
-				"index",
-				"css/index.less"
-			],
-			[
 				"less",
 				"css/post.less"
 			],
@@ -1731,10 +1662,6 @@
 				"index.html"
 			],
 			[
-				"header",
-				"_includes/header.html"
-			],
-			[
 				"post.ht",
 				"_layouts/post.html"
 			],
@@ -1747,20 +1674,12 @@
 				"_includes/footer.html"
 			],
 			[
-				"foo",
-				"_includes/footer.html"
-			],
-			[
 				"vk-",
 				"scripts/vk-comments.js"
 			],
 			[
 				"vk-com",
 				"scripts/vk-comments.js"
-			],
-			[
-				"fo",
-				"_includes/footer.html"
 			],
 			[
 				"def",
@@ -1855,6 +1774,10 @@
 		"selected_items":
 		[
 			[
+				"mist",
+				"~/dev/mistype/mistype.sublime-project"
+			],
+			[
 				"",
 				"~/public_html/lowolume/lowolume.sublime-project"
 			]
@@ -1869,12 +1792,13 @@
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
-	"show_tabs": true,
+	"show_tabs": false,
 	"side_bar_visible": true,
 	"side_bar_width": 268.0,
 	"status_bar_visible": true,

@@ -1,23 +1,18 @@
 <footer class="site-footer">
-<span class="site-footer-name">&laquo;Фронтир&raquo;</span>
-  <small>дивный мир фронтенда</small></span>
+<span class="site-footer-name">Фронтир
+  <small class="tip">paamayim nekudotayim</small></span>
+
+
+  <nav class="site-nav">
+    <ul class="site-nav-list">
+      <li class="site-nav-item"><a href="/tags" class="site-nav-item-text">категории</a></li>
+      <li class="site-nav-item"><a href="/about" class="site-nav-item-text">о журнале</a></li>
+      <li class="site-nav-item"><a href="//vk.com/frontiermag" class="site-nav-item-text">наш паблик в ВК</a></li>
+      <li class="site-nav-item"><a href="//twitter.com/ru_frontiermag" class="site-nav-item-text">наш твиттер</a></li>
+      <li class="site-nav-item"><a href="" class="site-nav-item-text"></a></li>
+    </ul>
+  </nav>
 </footer>
 
-<div class="jsonp-wrapper"></div>
-
-<script type="text/template" class="templates-comment">
-  <li class="comment">
-    <a href="//vk.com/<%= user.screen_name %>" class="comment-user-name">
-      <%= user.first_name %> <%= user.last_name %>
-    </a>
-    <span class="comment-text">
-      <%= comment.text %>
-      <% _.each(comment.attachments, function(v){ %>
-        <a href="<%= v.link %>"><%= v.text %></a>
-      <% })%></span>
-  </li>
-</script>
 <script src="//cdn.jsdelivr.net/underscorejs/1.6.0/underscore-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js"></script>
-<script src="/scripts/vk-comments.js"></script>
-{% if page.vkid %}<script defer>VK.postId = {{page.vkid}}; VK.getComments({{page.vkid}})</script>{% endif %}

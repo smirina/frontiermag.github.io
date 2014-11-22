@@ -1,24 +1,16 @@
 ---
-layout: default
+layout: page
 ---
 <article class="post">
-  <header>
+  <header class="post-header-wrapper">
     {% if page.tag %}<span class="tag small-caps " rel="tag">{{page.tag}}</span>{% endif %}
-    <h1 class="post-header">{{ page.title }} <a class="permalink" title="Ссылка на эту статью" href="{{page.permalink}}" rel="canonical permalink">anchor</a></h1>
-    {% if page.short %}<span class="post-short">{{page.short}}</span>{% endif %}
+    <h1 class="post-header">{{ page.title }}</h1>
   </header>
   {{ content }}
-  <aside>
+
+  <aside class="post-share">
+    <h5>Нам будет приятно, если вы поделитесь статьёй в соцсетях</h5>
     <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ru">Твитнуть</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </aside>
 </article>
-
-{% if page.vkid %}
-<section class="comments">
-  <h2 class="small-caps"> Комментарии </h2>
-  <ol class="comments-list">(загружаем...)</ol>
-</section>
-{% endif %}
-
-<a class="back" title="На главную" href="/">&lt;a href='/'>location.href = '/'&lt;/a></a>

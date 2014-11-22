@@ -1,1 +1,8 @@
-<a role="header" title="Фронтир &mdash; журнал о фронтенде" href="/" class="site-header unselectable">«Фронтир»</a>
+<h1 class="site-header-wrapper">
+  {% if page.path != 'index.html' %}
+    <a role="header" title="Frontier Magazine" href="/" class="site-header unselectable">Frontier</a>
+  {%else%}
+    <span title="Ссылка на страницу, на которой вы и так уже находитесь, смотрится глупо, поэтому тут <span>" class="site-header unselectable">Frontier</span>
+  {%endif %}
+  <span class="header-motto">who watches the watchmen?</span>
+</h1>
