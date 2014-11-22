@@ -1,0 +1,24 @@
+.main-posts {
+  width: 100%;
+  list-style: none;
+  font-size: 0;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 30em) {
+  .main-post {
+    width: 50%;    
+  }
+}
+
+.main-post {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  padding: 0 1em 1em 0;
+}
+
+.main-post.featured {
+  width: 100%;
+}
