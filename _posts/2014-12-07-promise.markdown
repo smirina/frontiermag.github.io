@@ -1,0 +1,54 @@
+---
+layout: post
+title: "Promise — что это"
+tag: "welcome to the future"
+published: false
+---
+Обещания — это обёртка над значением, которое станет известным позже. Они нужны для того, чтобы упростить асинхронный код.
+
+Код без обещаний выглядит примерно так:
+{% highlight js %}
+
+    makeRequest(params, function(err, data) {
+        if (err) {
+            panic(err)
+        } else {
+            doSomeWork(data, function(err, newData) {
+                if (err) {
+                    panic(err)
+                } else {
+                    doAnotherWork(
+                        data,
+                        function(err, evenNewerData) {
+                        //at last!
+                            if (err) {
+                                panic(err)
+                            } else {
+                             render(evenNewerData)
+                            }
+                        })
+                }
+            })
+        }
+    })
+    }
+
+{% endhighlight %}
+
+
+И тот же код, переписанный с использованием обещаний:
+
+{% highlight js %}
+
+    makeRequest(params)
+      .then(doSomeWork, panic)
+      .then(doAnotherWork, panic)
+      .then(render, panic)
+
+{% endhighlight %}
+
+Как видно из двух отрывков псевдокода, код, который использует обещания, короче и понятнее. К тому же, он концентрируется на том, _что_ нужно сделать, а не на том, что нужно _не забыть_. 
+
+### Как это работает
+
+Обещание — это объект, который реализует метод `then`.
