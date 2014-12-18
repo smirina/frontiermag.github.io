@@ -3,11 +3,11 @@ layout: translation
 title: Метачушь
 original: http://www.well.com/~doctorow/metacrap.htm
 tag: so meta
-short: Семь колобков метаутопии
+short: Семь колобков метаутопии — куда делось светлое будущее?
 ---
-Оригинал написан в 2001 году Кори Доктороу.
+Оригинал написан в 2001 году Кори Доктороу, поэтому не удивляйтесь многочисленным отсылкам в прошлое, которое вы уже и не помните.
 
-## 1. Введение
+### 1. Введение
 
 Метаданные это «данные о данных» — ключевые слова, длина страницы, заголовок, количество слов, выжимка, месторасполажение, SKU, ISBN, и так далее.
 
@@ -17,119 +17,126 @@ short: Семь колобков метаутопии
 Они согласовывают общий словарь для описания посудомоек: размер, вместимость, потребление энергии и воды, цена. Затем создают машиночитаемые базы данных своего ассортимента, которые доступны поисковым агентам и другим базам данных; так что потребитель может ввести параметры посудомойки, которую он ищет, и запросить одновременно множество сайтов, получив исчервывающий список производимых и подходящих под критерии посудомоечных машин.  
 И если все примут участие в такой системе и создадут хорошие метаданные с целью описать товары, сервисы и информацию, то найти в интернете высококачественную контексто-зависимую информацию станет проще простого: фанат сможет скачать всю музыку определенного жанра, производитель сможет эффективно находить поставщиков, а путешественники с лёгкостью выбрать комнату в отеле для предстоящего путешествия.
 
-Мир избыточных и надёжных метаданных был бы утопией. 
-
-A world of exhaustive, reliable metadata would be a utopia. It's also a pipe-dream, founded on self-delusion, nerd hubris and hysterically inflated market opportunities.
+Мир избыточных и надёжных метаданных был бы утопией. Равно как и несбыточной мечтой, основанной на самообмане, гордыне нёрдов и истерически раздутом рынке возможностей.
 
 
-2. The problems
+### 2. Проблемы
 
-There are at least seven insurmountable obstacles between the world as we know it and meta-utopia. I'll enumerate them below:.
+Существует как минимум семь непреодолимых препятствий между миром, каким мы его знаем, и метаутопией. Я обозначил их ниже:
 
-2.1 People lie
+#### 2.1 Люди лгут.
 
-Metadata exists in a competitive world. Suppliers compete to sell their goods, cranks compete to convey their crackpot theories (mea culpa), artists compete for audience. Attention-spans and wallets may not be zero-sum, but they're damned close.
-That's why:
+Метаданные существуют в мире конкуренции. Поставщики соревнуются в продаже своих товаров, фанатики соперничают в попытках донести свои псевдонаучные теории (mea culpa), артисты конкурируют за аудиторию. Количество доступного внимания и кошельки могут быть ненулевой суммой, но они чертовски близки к этому.
+И вот почему:
 
-A search for any commonly referenced term at a search-engine like Altavista will often turn up at least one porn link in the first ten results.
-Your mailbox is full of spam with subject lines like "Re: The information you requested."
-Publisher's Clearing House sends out advertisements that holler "You may already be a winner!"
-Press-releases have gargantuan lists of empty buzzwords attached to them.
-Meta-utopia is a world of reliable metadata. When poisoning the well confers benefits to the poisoners, the meta-waters get awfully toxic in short order.
+Поиск по любому часто употребляемому термину в поисковом движке, например, Альтависте, зачастую выдаст как минимум одну порноссылку в первой десятке результатов. Ваш почтовый ящик забит спамом с темой навроде «Re: Информация, которую вы запрашивали».
 
-2.2 People are lazy
+![Что-то вроде](/img/spam.png)
 
-You and me are engaged in the incredibly serious business of creating information. Here in the Info-Ivory-Tower, we understand the importance of creating and maintaining excellent metadata for our information.
-But info-civilians are remarkably cavalier about their information. Your clueless aunt sends you email with no subject line, half the pages on Geocities are called "Please title this page" and your boss stores all of his files on his desktop with helpful titles like "UNTITLED.DOC."
+Publisher's Clearing House рассылает рекламу, которая кричит: «Ты уже наверняка победитель!»
+Пресс-релизы содержат гаргантюанские списки ничего не значащих, но зато модных слов.  
+Метаутопия — это мир надёжных метаданных. Когда отравление колодца приносит пользу отравителям, метаводы очень скоро станут отвратительно ядовиты.
 
-This laziness is bottomless. No amount of ease-of-use will end it. To understand the true depths of meta-laziness, download ten random MP3 files from Napster. Chances are, at least one will have no title, artist or track information -- this despite the fact that adding in this info merely requires clicking the "Fetch Track Info from CDDB" button on every MP3-ripping application.
+#### 2.2 Люди ленивы
 
-Short of breaking fingers or sending out squads of vengeful info-ninjas to add metadata to the average user's files, we're never gonna get there.
+Вы и я вовлечены в невероятно серьёзное дело — создание информации. Здесь, в инфобашне из слоновой кости, мы понимаем всю важность создания и поддерживания безупречных метаданных для нашей информации. Но инфограждане потрясающе равнодушны касательно их информации. Ваша ничего не подозревающая тётя шлёт письма без указанной темы, половина страниц на Geocities называется «Please title this page», а ваш начальник хранит все файлы на рабочем столе с говорящими названиями вроде UNTITLED.DOC.
 
+И этой лени нет предела. Никакая «простота использования» не поможет. Чтобы понять настоящую глубину металени, скачайте десять случайных MP3 файлов с Napster. Шансы таковы, что как минимум один из них будет без названия, исполнителя или информации о треке — несмотря на то, что добавление этих данных сводится к клику «Получить информацию о треке из CDDB» в любом mp3-режущем приложении.
 
-2.3 People are stupid
+И без ломания пальцев или высылания отрядов мстительных инфониндзей ради добавления метаданных к файлам среднестатистического пользователя, мы никогда не достигнем цели.
 
-Even when there's a positive benefit to creating good metadata, people steadfastly refuse to exercise care and diligence in their metadata creation.
-Take eBay: every seller there has a damned good reason for double-checking their listings for typos and misspellings. Try searching for "plam" on eBay. Right now, that turns up nine typoed listings for "Plam Pilots." Misspelled listings don't show up in correctly-spelled searches and hence garner fewer bids and lower sale-prices. You can almost always get a bargain on a Plam Pilot at eBay.
+#### 2.3 Люди глупы
 
-The fine (and gross) points of literacy -- spelling, punctuation, grammar -- elude the vast majority of the Internet's users. To believe that J. Random Users will suddenly and en masse learn to spell and punctuate -- let alone accurately categorize their information according to whatever hierarchy they're supposed to be using -- is self-delusion of the first water.
+Даже когда есть выгода в создании хороших метаданных, люди постоянно отказываются заботиться о создании метаданных. Например, eBay: у каждого продавца есть чертовски хорошая причина дважды проверить свои лоты на опечатки и ошибки. Поищите «plam» на eBay. Прямо сейчас там девять лотов «Plam Pilots». Лоты с неправильно написанными словами не покажутся в поиске по запросу без ошибок, а потому соберут меньше ставок и цена продажи будет ниже. Почти всегда можно выгодно прикупить Plam Pilot на eBay.
 
 
-2.4 Mission: Impossible -- know thyself
+Тонкие (и грубые) области грамотности — правописания, пунктуация, грамматика — ускользают от подавляющего большинства пользователей Интернета. И верить, что пользователи (J. Random Users) внезапно и все вместе научатся правописанию и пунктуации — оставим в стороне точную категоризацию их информации относительно иерархии, в которой им предполагается пользоваться — это самообман чистой воды.
 
-In meta-utopia, everyone engaged in the heady business of describing stuff carefully weighs the stuff in the balance and accurately divines the stuff's properties, noting those results.
-Simple observation demonstrates the fallacy of this assumption. When Nielsen used log-books to gather information on the viewing habits of their sample families, the results were heavily skewed to Masterpiece Theater and Sesame Street. Replacing the journals with set-top boxes that reported what the set was actually tuned to showed what the average American family was really watching: naked midget wrestling, America's Funniest Botched Cosmetic Surgeries and Jerry Springer presents: "My daughter dresses like a slut!"
+#### 2.4 Миссия невыполнима: познай себя
 
-Ask a programmer how long it'll take to write a given module, or a contractor how long it'll take to fix your roof. Ask a laconic Southerner how far it is to the creek. Better yet, throw darts -- the answer's likely to be just as reliable.
+В метаутопии каждый увлечен пьянящим занятием описывания вещей, сопоставлением вещей с другими и точным угадыванием свойств вещей, записывая всё это по ходу дела.
 
-People are lousy observers of their own behaviors. Entire religions are formed with the goal of helping people understand themselves better; therapists rake in billions working for this very end.
+Простое наблюдение покажет ошибочность этого предположения. Когда Нильсен использовал дневники, чтобы собрать данные о привычках просмотра в наблюдаемых семьях, результаты сильно смещались к Шедеврам Театра и Улице Сезам. Замена дневников на тв-приставки, которые сообщали о каналах, на которых работали телевизоры, показала, что средняя американская семья действительно смотрела: рестлинг полуголых карликов, «Самые смешные неудачные пластические операции Америки» и Джерри Шпрингера, заявлявшего: «Моя дочь одевается как шлюха!»
 
-Why should we believe that using metadata will help J. Random User get in touch with her Buddha nature?
+Спросите программиста, сколько времени займёт написание конкретного модуля, или подрядчика — сколько уйдёт времени на ремонт крыши. Узнайте у лаконичного южанина, как далеко ещё до ручья. Или ещё лучше, сыграйте в дартс — ответы будут примерно той же надёжности.
 
+У людей плохо получается наблюдать за своим поведением. Целые религии основаны с целью помочь людям понять самих себя лучше; терапевты загребают миллиарды, работая в этой сфере.
 
-2.5 Schemas aren't neutral
-
-In meta-utopia, the lab-coated guardians of epistemology sit down and rationally map out a hierarchy of ideas, something like this:
-Nothing: 
-    Black holes
-
-Everything: 
-    Matter:
-        Earth:
-            Planets
-            Washing Machines
-        Wind:
-            Oxygen
-            Poo-gas
-        Fire:
-            Nuclear fission
-            Nuclear fusion
-            "Mean Devil Woman" Louisiana Hot-Sauce
-In a given sub-domain, say, Washing Machines, experts agree on sub-hierarchies, with classes for reliability, energy consumption, color, size, etc.
-This presumes that there is a "correct" way of categorizing ideas, and that reasonable people, given enough time and incentive, can agree on the proper means for building a hierarchy.
-
-Nothing could be farther from the truth. Any hierarchy of ideas necessarily implies the importance of some axes over others. A manufacturer of small, environmentally conscious washing machines would draw a hierarchy that looks like this:
-
-Energy consumption:
-    Water consumption:
-        Size:
-            Capacity:
-                Reliability
-While a manufacturer of glitzy, feature-laden washing machines would want something like this:
-Color:
-    Size:
-        Programmability:
-            Reliability
-The conceit that competing interests can come to easy accord on a common vocabulary totally ignores the power of organizing principles in a marketplace.
-
-2.6 Metrics influence results
-
-Agreeing to a common yardstick for measuring the important stuff in any domain necessarily privileges the items that score high on that metric, regardless of those items' overall suitability. IQ tests privilege people who are good at IQ tests, Nielsen Ratings privilege 30- and 60-minute TV shows (which is why MTV doesn't show videos any more -- Nielsen couldn't generate ratings for three-minute mini-programs, and so MTV couldn't demonstrate the value of advertising on its network), raw megahertz scores privilege Intel's CISC chips over Motorola's RISC chips.
-Ranking axes are mutually exclusive: software that scores high for security scores low for convenience, desserts that score high for decadence score low for healthiness. Every player in a metadata standards body wants to emphasize their high-scoring axes and de-emphasize (or, if possible, ignore altogether) their low-scoring axes.
-
-It's wishful thinking to believe that a group of people competing to advance their agendas will be universally pleased with any hierarchy of knowledge. The best that we can hope for is a detente in which everyone is equally miserable.
+Так почему мы должны верить, что метаданные помогут J. Random User достичь своей природы Будды?
 
 
-2.7 There's more than one way to describe something
+#### 2.5 Схемы не нейтральны
 
-"No, I'm not watching cartoons! It's cultural anthropology."
+В метаутопии одетые в халаты охранники эпистемологии сидят и рационально расчерчивают иерархию идей, что-то вроде:
+<pre>
+Ничто: 
+    Чёрные дыры
 
-"This isn't smut, it's art."
+Что-то: 
+    Материя:
+        Земля:
+            Планеты
+            Посудомоечные машины
+        Ветер:
+            Кислород
+            Пердёж
+        Огонь:
+            Деление ядер
+            Слияние ядер
+            Острый соус из Луизианы «Mean Devil Woman»
+</pre>
 
-"It's not a bald spot, it's a solar panel for a sex-machine."
+В определенной области, скажем, посудомоечных машинах, эксперты согласятся с подиерархиями, включающими классы надёжности, энергопотребление, цвет, размеры и так далее.  
+Это подразумевает, что существует «правильный» способ категоризации идей, и что разумные люди с достаточным количеством времени и финансов, могут согласиться о подходящих критериях для построения иерархии.
 
-Reasonable people can disagree forever on how to describe something. Arguably, your Self is the collection of associations and descriptors you ascribe to ideas. Requiring everyone to use the same vocabulary to describe their material denudes the cognitive landscape, enforces homogeneity in ideas.
+Ничто не может быть так далеко от правды. Любая иерархия идей непременно подразумевает важность определенных осей над другими. Производитель небольших, экологичных машин нарисует иерархию навроде такой:
 
-And that's just not right.
+<pre>
+Энергопотребление:
+    Потребление воды:
+        Габариты:
+            Вместимость:
+                Надёжность
+</pre>
+
+Тогда как производитель роскошных посудомоечных машин с тоннами опций захочет что-то вроде:
+
+<pre>
+Цвет:
+    Габариты:
+        Программируемость:
+            Надёжность
+</pre>
+
+Вера в то, что конкурирующие интересы легко согласуются в единый словарь, игнорирует мощь организационных принципов на рынке.
+
+#### 2.6 Метрики влияют на результат
+
+Соглашение относительно общего критерия для измерения важных вещей в любой сфере обязательно даёт преимущество товарам, которые высоко оцениваются по этой метрике, вне зависимости от пригодности в целом. IQ-тесты дают преимущество людям, которые хороши в прохождении IQ-тестов. Рейтинги Нильсона благоволят 30- и 60-минутным телепередачам (и поэтому MTV не показывает больше ролики — Нильсен не смог создать рейтинги для трёхминутных мини-программ, а потому MTV не смогли продемонстрировать ценность рекламирования в их сети), чистые мегагерцы дают фору CISC-чипам Intel против RISC-чипов Motorola.
+Оси оценок взаимоисключающи: ПО, которое хорошо оценивается по безопасности, плохо показывает себя в рейтинге удобства, десерты хороши на вкус, но плохи для здоровья. Каждый игрок, принимающий участие в создании стандарта метаданных, хочет подчеркнуть то, в чём у него есть преимущества, и запрятать (или, если возможно, вообще не включать) те оси, с которыми у него всё плохо.
+
+Верить в то, что группа из людей, продвигающих свои планы, будет единодушно довольна любой иерархий знаний — значит принимать желаемое за действительное. В лучшем случае, мы можем надеяться на компромисс, который каждому не подходит.
 
 
-3. Reliable metadata
+#### 2.7 Существует более чем один способ описать что-либо
 
-Do we throw out metadata, then?
-Of course not. Metadata can be quite useful, if taken with a sufficiently large pinch of salt. The meta-utopia will never come into being, but metadata is often a good means of making rough assumptions about the information that floats through the Internet.
+> «Я не смотрю мультики! Это культурная антропология»
+> «Это не порно, это искусство»
+> «Это вовсе не проплешина, а солнечная панель для секс-машины»
 
-Certain kinds of implicit metadata is awfully useful, in fact. Google exploits metadata about the structure of the World Wide Web: by examining the number of links pointing at a page (and the number of links pointing at each linker), Google can derive statistics about the number of Web-authors who believe that that page is important enough to link to, and hence make extremely reliable guesses about how reputable the information on that page is.
+Разумные люди могут дискутировать бесконечно о том, как описать что-либо. Спорно, но ваше Я — это совокупность ассоциаций и описаний, которые вы приписываете к идеям. Требовать от каждого использовать тот же словарь — значит обнажать когнитивный ландшафт, что влечёт однородность идей.
 
-This sort of observational metadata is far more reliable than the stuff that human beings create for the purposes of having their documents found. It cuts through the marketing bullshit, the self-delusion, and the vocabulary collisions.
+А это просто неправильно.
 
-Taken more broadly, this kind of metadata can be thought of as a pedigree: who thinks that this document is valuable? How closely correlated have this person's value judgments been with mine in times gone by? This kind of implicit endorsement of information is a far better candidate for an information-retrieval panacea than all the world's schema combined.
+
+### 3. Надёжные метаданные
+
+Так что, выбрасываем метаданные?
+
+Конечно нет. Метаданные довольно полезны, если использовать с подходящей щепоткой соли. Метаутопия никогда не наступит, но метаданные, зачастую, дают хорошия основания для грубых предположений о информации, которая путешествует по сети.
+
+Определенные разновидности неявно выраженных метаданных, на самом деле, чертовски полезны. Гугл использует метаданные о структуре мировой сети: изучая количество ссылок на страницу (и количество ссылок на каждый источник), Гугл может извлечь статистику о количестве веб-авторов, которые уверены в важности страницы настолько, чтобы сослаться на неё, и из этого сделать невероятно надёжные догадки о том, насколько информация на странице достоверна.
+
+Такого рода метаданные из наблюдений намного надёжнее, нежели то, что люди создают с целью, чтобы их документы нашли. Они прогрызаются свозь маркетинговую чушь, самообман и коллизии словарей.
+
+Более общно, такой вид метаданных можно рассматривать как родословную: кто думает, что этот документ ценен? Насколько сильно коррелируют ценности этого человека с моими за прошедшее время? Такой вид неявного подтверждения информации намного больше подходит для информационноаггрегирующей панацеи, нежели все схемы мира вместе взятые.
