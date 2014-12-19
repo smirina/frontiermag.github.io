@@ -74,10 +74,11 @@ html, body {
 }
 
 .site-footer {
-  border-top: 1em solid #999;
+  border-top: .1em solid #999;
   color: #333;
   margin: 1em 0 0;
   padding: 0.1em;
+  background: #f0f0f0;
 }
 
 .site-footer-name {
