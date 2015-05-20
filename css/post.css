@@ -44,6 +44,11 @@
   font: 1em/1.5 PT Sans, sans-serif;
   font-variant: normal;
   width: 100%;
-  white-space: pre-wrap;
+  white-space: pre;
   word-break: keep-all;
+}
+
+.post pre.mono {
+  font-family: monospace;
+  font-size: 0.75em;
 }
