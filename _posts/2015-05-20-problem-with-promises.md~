@@ -1,0 +1,830 @@
+---
+layout: post
+tag: 'javascript'
+title: Проблема с обещаниями
+short: "Пора признать, что у нас проблема с обещаниями: мы используем
+их, не понимая"
+published: true
+author: Нолан Лоусон
+---
+> WARNING: статья ещё не готова
+
+Дорогие джаваскриптеры, пора признать: у нас проблема с обещаниями.
+
+Нет, не с самими обещаниями. [Спецификация A+](https://promisesaplus.com/) превосходна.
+
+Большая проблема, открывшаяся для меня в течении прошедшего года,
+когда я видел множество программистов, не справляющихся с API PouchDB
+и другими API с обещаниями, заключается в том, что
+
+<em style="font-size: 2em; display: block; text-align: center; margin:
+1em;">Многие из нас используют обещания, не до конца их понимая.</em>
+
+Если вам сложно поверить, посмотрите на задачку, которую я недавно
+[запостил в твиттер](https://twitter.com/nolanlawson/status/578948854411878400):
+
+<blockquote><p> В чём разница между этими четырьмя обещаниями?</p>
+ {% highlight javascript %}
+ doSomething().then(function () {
+	return doSomethingElse();
+ });
+
+ doSomething().then(function () {
+	doSomethingElse();
+ });
+
+doSomething().then(doSomethingElse());
+
+doSomething().then(doSomethingElse);
+ {% endhighlight %}
+</blockquote>
+
+Если вы знаете ответ, то поздравляю: вы мастер обещаний.  Можете
+дальше не читать эту статью.
+
+Для остальных 99.99% из вас: вы не одиноки. Никто из ответивших на мой
+твит не смог решить эту задачу, а ответ на #3 меня и самого
+удивил. Да, несмотря на то, что я сам написал этот тест!
+
+Ответы в конце статьи, но сначала, я бы хотел исследовать, почему
+ обещания вообще такие каверзные, и почему столь многие из нас --
+ и новички, и эксперты -- попадаются на эту удочку. Я также хочу
+ предложить то, что мне кажется моментом прозрения, _один хитрый трюк_,
+ чтобы влёгкую понять обещания. И да, я правда считаю, что они не
+ такие уж и сложные!
+ 
+Но прежде чем мы начнём, давайте подвергнем сомнению некоторые общие
+предположение насчёт них.
+
+## Для чего обещания?
+
+В текстах про обещания вы часто найдёте отсылки к
+[пирамиде зла](https://medium.com/@wavded/managing-node-js-callback-hell-1fe03ba8baf),
+со страшным коллбэчным кодом, который тянется за правую часть экрана.
+
+Обещания действительно решают эту проблему, но они не только про
+отступы. Как стало ясно из великолепного выступления
+[Redemption from Callback Hell](http://youtu.be/hf1T_AONQJU),
+настоящая беда с коллбэками в том, что они отбирают у нас такие вещи,
+как `return` и `throw`. Вместо этого, весь поток нашей программы
+основан на сайд-эффектах: одна функция случайно вызывает другую.
+
+На самом деле, коллбэки ещё коварнее: они отбирают у нас _стэк_,
+то, что мы принимаем за должное в языках программирования.
+Писать код без доступа к стэку всё равно что ехать на машине
+без педали тормоза: вам не понять, как сильно она нужна,
+пока вы не потянетесь за ней, а её там нет.
+
+Вся суть обещаний в том, чтобы вернуть основы языка, которые
+мы утратили, когда стали писать асинхронно: `return`, `throw`
+и стэк. Но надо знать, как их правильно использовать, чтобы
+получить от них толк.
+
+## Ошибки новичков
+
+Некоторые пытаются объяснить обещания [в картинках](http://andyshora.com/promises-angularjs-explained-as-cartoon.html)
+или очень существительно-ориентированным способом: <q>О, это штука, которую можно передавать
+тут и там, она представляет асинхронное значение.
+
+Я не нахожу такие объяснения помогающими. Для меня, обещания -- про
+структуру кода и потока. Поэтому я думаю, что лучше просто пройтись
+по распространненым ошибкам и показать, как их исправить.
+Я называю их ошибками новичка в смысле: <q>ты новичок сейчас, но скоро
+станешь профи</q>.
+
+<aside style="background-color: aliceblue; padding: 1em; margin: 2em -1em;">
+<span style="font-variant: small-caps;">Лирическое отступление</span>: &laquo;обещания&raquo; значат для разных
+людей много разных вещей, но в этой статье я буду говорить о них,
+подразумевая <a href="https://promiseaplus.com">официальную спецификацию</a>,
+реализованную в современных браузерах как <code>window.Promise</code>.
+Не во всех браузерах есть <code>window.Promise</code>, так что для хорошего полифилла
+проверьте библиотеку с остроумным названием <a href="https://github.com/calvinmetcalf/lie">Lie</a>,
+чуть ли не самую маленькую из соответствующих спецификации.
+</aside>
+
+### Ошибка новичка #1: пирамида зла из обещаний
+
+Смотря на то, как люди используют PouchDB, у которой по большей части
+API построено на обещаниях, я вижу много плохих паттернов использования
+обещаний.
+
+Самое распространенное плохое решение вот это:
+
+{% highlight javascript %}
+remotedb.allDocs({
+    include_docs: true,
+    attachments: true
+}).then(function (result) {
+    var docs = result.rows;
+    docs.forEach(function(element) {
+        localdb.put(element.doc).then(function(response) {
+          alert("Pulled doc  with id " + element.doc._id + " and added to local db.");
+        }).catch(function (err) {
+            if (err.status == 409) {
+                localdb.get(element.doc._id).then(function (resp) {
+                    localdb.remove(resp._id, resp._rev).then(function (resp) {
+  // И так далее.. Да, оказывается, можно использовать обещания, словно
+  // коллбэки, и да, это всё равно, что подстригать ногти
+  // циркулярной пилой
+{% endhighlight %}
+
+И если вы думаете, что такие ошибки случаются только с абсолютными
+новичками, вы будете удивлены узнать, что я взял этот фрагмент кода
+из официального девелоперского блога BlackBerry! Старые привычки коллбэков
+отмирают не сразу. (Девелоперу Блэкберри: извини, что придрался к твоему коду,
+но этот пример очень показателен.)
+
+Этот стиль гораздо лучше:
+
+{% highlight javascript %}
+remotedb.allDocs(...).then(function (resultOfAllDocs) {
+    return localdb.put(...); 
+}).then(function (resultOfPut) {
+    return localdb.get(...);
+}).then(function (resultOfGet) {
+     return localdb.put(...);
+}).catch(function (err) {
+    console.log(err);
+});
+{% endhighlight %}
+
+Это называется _композиция обещаний_, и это одна из великих супервозможностей
+обещаний. Каждая функция будет вызвана только тогда, когда зарезолвится
+предыдущее обещание, и она будет вызвана с результатом этого обещания.
+Подробнее ниже.
+
+
+### Ошибка новичка #2: WTF, как мне сделать forEach() обещаний?
+
+Здесь у большинства людей ломается понимание обещаний. Как только они
+тянутся к знакомому циклу `forEach()` (или циклу `for`, или `while`),
+у них нет идей, как заставить их работать с обещаниями. Так что они
+пишут что-то вроде:
+
+{% highlight javascript %}
+// I want to remove() all docs db.allDocs({
+    include_docs: true
+}).then(function (result) {
+    result.rows.forEach(function (row) {
+        db.remove(row.doc);  
+    });
+}).then(function () {
+    // I naively believe all docs have been removed() now!
+}); 
+
+{% endhighlight %}
+
+Что не так с этим кодом? Проблема в том, что первая функция вернёт
+`undefined`, а это значит, что вторая функция не будет дожидаться,
+пока `db.remove()` будет вызвана на всех документах. На самом деле,
+она вообще ничего не будет ждать и может быть выполнена с любым
+количеством удаленных документов!
+
+И это особенно коварный баг, потому что вы можете не заметить,
+что что-то не так, если PouchDB удалит документы достаточно быстро,
+чтобы обновить ваш интерфейс. Баг может всплыть только в странных
+race conditions или в определенных браузерах, и тогда его будет
+практически невозможно отдебажить.
+
+<abbr title="Too long; Didn't Read">TLDR</abbr> всего этого в том,
+что `forEach()`/`for`/`while` это не конструкции, что вы ищете.
+Вам нужен `Promise.all()`:
+
+{% highlight javascript %}
+db.allDocs({include_docs: true}).then(function (result) {
+    return Promise.all(result.rows.map(function (row) {
+        return db.remove(row.doc);
+    });
+}).then(function (arrayOfResults) {
+    // All docs have really been removed() now!
+});
+{% endhighlight %}
+
+Что только что произошло? `Promise.all()` берёт массив обещаний на вход,
+а затем даёт вам другое обещание, которое зарезолвится тогда,
+когда зарезолвится каждое из этих обещаний. Это асинхронный
+эквивалент цикла `for`.
+
+`Promise.all()` также передаёт массив результатов следующей функции,
+что может быть очень полезным. Например, вы хотите сделать `get()`
+нескольких вещей из PouchDB. Обещание `all()` также будет отклонено,
+если любое из под-обещаний будет отклонено, что ещё более полезно.
+
+### Ошибка новичка #3: забыть добавить `.catch()`
+
+Это другая распространенная ошибка. Блаженно уверенные в том, что
+их обещания никогда не отклоняются, многие разработчики забывают
+добавить `.catch()` где-либо в своем коде. К несчастью, это значит,
+что любая брошенная ошибка будет &laquo;проглочена&raquo; и вы даже
+не увидите её в консоли. Это реально сложно дебажить.
+
+Чтобы избежать этого грязного сценария, я приобрел привычку просто
+добавлять следующий код к цепочке обещаний:
+
+{% highlight javascript %}
+somePromise().then(function () {
+    return anotherPromise();
+}).then(function () {
+    return yetAnotherPromise();
+}).catch(console.log.bind(console)); // <-- ага, вот эти ребята
+{% endhighlight %}
+
+Даже если вы не ждёте ошибки, мудрым будет всегда добавить `catch()`.
+Это сделает вашу жизнь проще, даже если ваши предположения окажутся
+неверными.
+
+### Ошибка новичка #4: использовать deferred
+
+Эту ошибку я вижу всё время, и я не хочу даже повторять это здесь,
+из-за страха, что подобно Битлджусу, просто назвать имя -- значит
+вызвать ещё больше его.
+
+Вкратце, у обещаний долгая история, и на то, чтобы сделать всё правильно,
+у сообщества джаваскриптеров ушло много времени. В ранние дни,
+jQuery и Angular использовали паттерн deferred повсюду, который сейчас
+был заменен спецификацией ES6 Promise, которую реализуют &laquo;хорошие&raquo;
+библиотеки, такие как Q, When, RSVP, Bluebird, Lie и другие.
+
+Так что если это слово встречается в вашем коде (я не стану повторять его
+в третий раз!), то вы делаете что-то не так. Вот как избежать этого.
+
+Во-первых, многие библиотеки обещаний дают вам способ &laquo;импортировать&raquo;
+обещания от других библиотек. Например, модуль `$q` из Ангуляра позволяет
+вам обернуть не-`$q`шные обещания через `$q.when()`. Так что пользователи
+Ангуляра могут обернуть обещания из PouchDB так:
+
+{% highlight javascript %}
+$q.when(db.put(doc)).then(/* ... */); // <-- это всё!
+{% endhighlight %}
+
+Другой способ -- использовать паттерн раскрывающего конструктора (FIXME!),
+что удобно для оборачивания API без обещаний. Например, чтобы обернуть
+основанное на коллбэках API вроде `fs.readFile()` из node.js, нужно просто:
+
+{% highlight javascript %}
+new Promise(function (resolve, reject) {
+    fs.readFile('myfile.txt', function (err, file) {
+        if (err) { return reject(err); }
+        resolve(file); });
+}).then(/* ... */)
+{% endhighlight %}
+
+Готово! Мы победили страшный def... Ха, поймал себя. :)
+
+### Ошибка новичка #5: использовать сайд-эффекты, вместо возврата значения
+
+Что не так с этим кодом?
+
+{% highlight javascript %}
+somePromise().then(function () {
+    someOtherPromise();
+}).then(function () { 
+  // Фух, надеюсь someOtherPromise() разрешилось!
+  // Спойлер: нет, не разрешилось.
+});
+{% endhighlight %}
+
+Хорошо, пришло время рассказать всё, что вам нужно знать об обещаниях.
+
+Серьёзно, это один странный трюк, который, когда вы поймёте его,
+предотвратит все ошибки, о которых я говорил выше. Готовы?
+
+Я говорил, что магия обещаний в том, что они возвращают нам обратно
+драгоценные `return` и `throw`. Но как это выглядит на практике?
+
+Каждое обещание даёт вам метод `then()` (или `catch(), который просто
+сахар для `then(null, ...)`). Вот мы внутри функции <code>then()</code>:
+
+{% highlight javascript %}
+somePromise().then(function () {
+   // Я внутри then()! 
+});
+{% endhighlight %}
+
+Что можно здесь сделать? Три вещи:
+
+1. вернуть другое обещание
+2. вернуть синхронное значение (или `undefined`)
+3. бросить синхронную ошибку.
+
+Это всё. Как только вы поймёте этот трюк, вы поймёте обещания.
+Поэтому давайте пройдёмся по каждому пункут по отдельности
+
+#### 1. Вернуть другое обещание
+
+Это распространненый паттерн, который вы увидите в текстах про обещания,
+как в примере про &laquo;композицию обещаний&raquo; выше.
+
+{% highlight javascript %}
+getUserByName('nolan').then(function (user) {
+    return getUserAccountById(user.id);
+}).then(function (userAccount) {
+    // I got a user account!
+});
+{% endhighlight %}
+
+Отметьте, что я возвращаю второе обещание &mdash; этот `return` очень важен.
+Если бы его не было, то `getUserAccountById()` был бы сайд-эффектом
+и следующая функция получила бы `undefined` вместо `userAccount`.
+
+
+#### 2. Вернуть синхронное значение (или `undefined`)
+
+Возвращение `undefined` зачастую ошибка, но возвращение синхронного
+значения на самом деле потрясающий способ превратить синхронный код
+в _обещающий_ код. Скажем, у нас есть кэш пользователей в памяти. Мы можем:
+
+{% highlight javascript %}
+getUserByName('nolan').then(function (user) {
+    if (inMemoryCache[user.id]) {
+        return inMemoryCache[user.id]; // возвращаем синхронное значение
+    }
+    return getUserAccountById(user.id); // возвращаем обещание
+}).then(function (userAccount) {
+    // У меня есть аккаунт!
+});
+{% endhighlight %}
+
+Клёво, правда? Второй функции без разницы, был ли `userAccount`
+получен синхронно или асинхронно, а первая может вернуть либо
+синхронное, либо асинхронное значение.
+
+Неудобная неприятность заключается в том, что функции без `return`
+в Javascript технически возвращают `undefined`, а это значит, что
+легко случайно привнести сайд-эффекты тогда, когда вы хотели
+вернуть что-либо.
+
+Поэтому, я привык всегда возвращать что-либо или кидать ошибку из
+`then()`, и вам рекомендую то же самое.
+
+#### 3. Бросить синхронную ошибку
+
+Кстати, о `throw`, здесь обещания становятся ещё лучше. Скажем, мы
+хотим бросить синхронную ошибку, если пользователь вышел из аккаунта.
+Это легко:
+
+{% highlight javascript %}
+getUserByName('nolan').then(function (user) {
+    if (user.isLoggedOut()) {
+        throw new Error('user logged out!'); // кидаем ошибку!
+    }
+    if (inMemoryCache[user.id]) {
+        return inMemoryCache[user.id]; // возвращаем простое значение!
+    }
+    return getUserAccountById(user.id); // возвращаем обещание!
+}).then(function (userAccount) {
+   // У меня есть аккаунт!
+}).catch(function (err) {
+   // Блин, а у меня ошибка!
+});
+{% endhighlight %}
+
+Наш `catch()` получит синхронную ошибку, если пользователь вышел из аккаунта,
+а также если любое из обещаний будет отклонено. Опять, функции без разницы,
+была ли ошибка синхронной или асинхронной.
+
+Это особенно полезно, потому что может помочь найти ошибки в коде
+в процессе разработчки. Например, если где-то внутри `then()` мы делаем
+`JSON.parse()`, который кидает синхронную ошибку, если JSON не корректен.
+С коллбэками, ошибка была бы проглочена, но с обещаниями мы можем просто
+обработать её внутри `catch()`.
+
+## Продвинутые ошибки
+
+Отлично, теперь вы узнали трюк для понимания обещаний, давайте поговорим
+о редких проблемах. Потому что, конечно, всегда есть редкие проблемы.
+
+Эти ошибки я определяю как &laquo;продвинутые&raquo;, потому что видел их
+только у программистов, которые уже довольно неплохо прониклись обещаниями.
+Но нам нужно их обсудить, чтобы решить задачку из начала этой статьи.
+
+### Продвинутая ошибка #1: не знать о `Promise.resolve()`
+
+Как я показал выше, обещания удобны для превращения синхронного кода
+в асинхронный. Как бы то ни было, если вы часто пишете код вроде:
+
+{% highlight javascript %}
+new Promise(function (resolve, reject) {
+      resolve(someSynchronousValue);
+}).then(/* ... */);
+{% endhighlight %}
+
+То вы можете выразить это лаконичнее, используя `Promise.resolve()`:
+
+{% highlight javascript %}
+Promise.resolve(someSynchronousValue).then(/* ... */);
+{% endhighlight %}
+
+Также этот метод невероятно полезен для ловли синхронных ошибок.
+Это настолько полезно, что я привык писать в начале почти всех
+моих методов API, возвращающих обещания, что-то вроде:
+
+{% highlight javascript %}
+function somePromiseAPI() { 
+    return Promise.resolve().then(function () {
+        doSomethingThatMayThrow();
+        return 'foo';
+    }).then(/* ... */);
+}
+
+{% endhighlight %}
+
+Просто запомните: код, который может кидать синхронные ошибки, &mdash;
+хороший кандидат для почти-невозможно-отдебажить проглоченных ошибок
+где-нибудь по дороге. Но если оборачивать всё в `Promise.resolve()`,
+то всегда можно будет поймать их в `catch()` позже.
+
+Аналогично, есть `Promise.reject()`, который возвращает обещание, которое
+немедленно отклоняется:
+
+{% highlight javascript %}
+Promise.reject(new Error('some awful error'));
+{% endhighlight %}
+
+### Продвинутая ошибка #2: `catch()` немного не `then(null, ...)`
+
+Выше я говорил, что `catch()` &mdash; просто синтаксический сахар.
+Так что эти два фрагмента эквивалентны:
+
+{% highlight javascript %}
+somePromise().catch(function (err) { // handle error });
+
+somePromise().then(null, function (err) { // handle error });
+{% endhighlight %}
+
+Но это не значит, что эти два фрагмента одинаковы:
+
+
+{% highlight javascript %}
+somePromise().then(function () {
+    return someOtherPromise();
+}).catch(function (err) {
+    // handle error
+});
+
+somePromise().then(function () {
+    return someOtherPromise();
+}, function (err) {
+    // handle error
+}); 
+
+{% endhighlight %}
+
+Если вам интересно, почему они не одинаковые, подумайте, что произойдет,
+если первая функция бросит ошибку:
+
+{% highlight javascript %}
+somePromise().then(function () {
+    throw new Error('oh noes');
+}).catch(function (err) {
+    // Поймал! :)
+});
+
+somePromise().then(function () {
+    throw new Error('oh noes');
+},function (err) {
+    // Не словил! :(
+});
+{% endhighlight %}
+
+Оказывается, когда вы используете формат `then(resolveHandler, rejectHandler)`,
+`rejectHandler` не поймает ошибку, если её кинет `resolveHandler`.
+
+Поэтому, я просто не использую второй аргумент у `then()` и всегда предпочитаю
+`catch()`. Исключение только для случаев, когда я пишу асинхронные тесты
+для Mocha, где я могу написать тест на то, что ошибка действительно кидается:
+
+{% highlight javascript %}
+it('should throw an error', function () {
+    return doSomethingThatThrows().then(function () {
+        throw new Error('I expected an error!');
+    }, function (err) {
+        err.should.exist();
+    });
+});
+{% endhighlight %}
+
+И раз мы уж тут, Mocha и Chai образуют хорошую комбинацию для
+тестирования API с обещаниями. В проекте pouchdb-plugin-seed 
+есть несколько шаблонных тестов, чтобы помочь вам начать.
+
+### Продвинутая ошибка #3: обещания или фабрики обещаний
+
+Скажем, вы хотите исполнить несколько обещаний одно за другим последовательно.
+То есть, вам нужно что-то вроде `Promise.all()`, но которе
+не выполняет обещания параллельно.
+
+Наивный код будет выглядеть примерно так:
+
+{% highlight javascript %}
+function executeSequentially(promises) {
+    var result = Promise.resolve();
+    promises.forEach(function (promise) {
+        result = result.then(promise);
+    });
+    return result;
+}
+{% endhighlight %}
+
+К несчасть, он не будет работать так, как вы предполагали.
+Обещания, которые вы передадите в `executeSequentially()` всё ещё
+будут исполняться параллельно.
+
+Причина этого в том, что вы не хотите оперировать массивом обещаний
+вовсе. По спецификации, как только обещание создано, оно начинает
+исполняться. Так что на самом деле вы хотите массив фабрик обещаний:
+
+{% highlight javascript %}
+function executeSequentially(promiseFactories) {
+    var result = Promise.resolve();
+    promiseFactories.forEach(function(promiseFactory) {
+        result = result.then(promiseFactory);
+    });
+    return result;
+} 
+{% endhighlight %}
+
+Я знаю, что вы сейчас подумали: "Что это, блин, за джава-программист,
+и почему он говорит о фабриках?". Но фабрика обещаний это
+функция, которая возвращает обещание:
+
+{% highlight javascript %}
+function myPromiseFactory() {
+    return somethingThatCreatesAPromise();
+}
+{% endhighlight %}
+
+Почему это работает? Потому что фабрика не создаёт обещание до тех пор,
+пока её не попросят. Работает так же, как и функция `then` -- в сущности,
+это одно и то же!
+
+Если вы посмотрите на функцию `executeSequentially()`, а затем представите,
+что `myPromiseFactory` заменяется внутри `result.then(...)`, то, надеюсь,
+у вас зажглась лампочка над головой. В этот момент вы достигли
+просвещения обещаний.
+
+
+### Продвинутая ошибка #4: ладно, а что если я хочу результат двух обещаний?
+
+Часто одно обещание зависит от другого, но нам нужен результат обоих.
+Например:
+
+{% highlight javascript %}
+getUserByName('nolan').then(function (user) {
+    return getUserAccountById(user.id);
+}).then(function (userAccount) {
+ // чёрт, объект user мне тоже нужен!
+});
+{% endhighlight %}
+
+Желая быть хорошими разработчиками и избегая пирамиды зла, мы можем
+просто хранить объект `user` в переменной во внешней области видимости:
+
+{% highlight javascript %}
+var user;
+getUserByName('nolan').then(function (result) {
+    user = result;
+    return getUserAccountById(user.id);
+}).then(function (userAccount) { 
+    // окей, здесь доступны и `user` и `userAccount`
+});
+{% endhighlight %}
+
+Это работает, но мне кажется немного неуклюжим. Я рекомендую следующее:
+отбросьте ваши preconceptions и embrace пирамиду:
+
+{% highlight javascript %}
+getUserByName('nolan').then(function (user) {
+    return getUserAccountById(user.id).then(function (userAccount) {
+        // окей, есть доступ и к `user` и к `userAccount`
+    });
+});
+{% endhighlight %}
+
+...хотя бы, временно. Если отступы снова когда-нибудь станут проблемой,
+можно будет сделать то, что джаваскриптеры делают с незапамятных времен,
+и вынести анонимную функцию в именованную:
+
+{% highlight javascript %}
+function onGetUserAndUserAccount(user, userAccount) {
+    return doSomething(user, userAccount);
+}
+
+function onGetUser(user) {
+    return getUserAccountById(user.id).then(function (userAccount) {
+        return onGetUserAndUserAccount(user, userAccount);
+    });
+}
+
+getUserByName('nolan')
+  .then(onGetUser)
+  .then(function () {
+     // на тот момент `doSomething()` уже выполнена и мы снова
+     // на нулевом отступе
+  });
+{% endhighlight %}
+
+По мере того, как ваш код с обещаниями становится всё сложнее,
+вы можете понять, что вытаскиваете всё больше и больше функций
+в именованные. Я считаю, что это ведёт к эстетически приятному коду,
+который выглядит примерно так:
+
+{% highlight javascript %}
+putYourRightFootIn()
+  .then(putYourRightFootOut)
+  .then(putYourRightFootIn)  
+  .then(shakeItAllAbout);
+{% endhighlight %}
+
+Обещания как раз об этом.
+
+
+
+### Продвинутая ошибка #5: проваливание обещаний
+
+Наконец-то, это та ошибка, которую я допустил в изначальной задаче.
+Это очень редкий юзкейс, и он может никогда не появиться в вашем коде,
+но он точно удивил меня.
+
+
+What do you think this code prints out?
+
+{% highlight javascript %}
+Promise.resolve('foo').then(Promise.resolve('bar')).then(function
+  (result) { console.log(result); });
+
+{% endhighlight %}
+
+If you think it prints out bar,
+  you're mistaken. It actually prints out foo!
+
+The reason this happens is because when you pass then() a non-function
+(such as a promise), it actually interprets it as then(null), which
+causes the previous promise's result to fall through. You can test
+this yourself:
+
+{% highlight javascript %}
+Promise.resolve('foo').then(null).then(function (result) {
+  console.log(result); });
+{% endhighlight %}
+
+ Add as many then(null)s as you want; it
+  will still print foo.
+
+This actually circles back to the previous point I made about promises
+vs promise factories. In short, you can pass a promise directly into a
+then() method, but it won't do what you think it's doing. then() is
+supposed to take a function, so most likely you meant to do:
+
+
+{% highlight javascript %}
+
+Promise.resolve('foo').then(function () { return
+  Promise.resolve('bar'); }).then(function (result) {
+  console.log(result); });
+{% endhighlight %}
+
+This will print bar, as we expected.
+
+So just remind yourself: always pass a function into then()!
+
+Solving the puzzle Now that we've learned everything there is to know
+about promises (or close to it!), we should be able to solve the
+puzzle I originally posed at the start of this post.
+
+Here is the answer to each one, in graphical format so you can better
+visualize it:
+
+
+### Задача #1
+{% highlight javascript %}
+doSomething().then(function () {
+   return doSomethingElse();
+}).then(finalHandler);
+{% endhighlight %}
+
+Ответ:
+
+<pre class="mono">
+doSomething
+|-----------------|
+                  doSomethingElse(undefined)
+                  |------------------|
+                                     finalHandler(resultOfDoSomethingElse)
+                                     |------------------|
+</pre>
+
+### Задача #2
+{% highlight javascript %}
+doSomething().then(function () {
+    doSomethingElse();
+}).then(finalHandler);
+{% endhighlight %}
+
+Ответ:
+
+<pre class="mono">
+doSomething
+|-----------------|
+                  doSomethingElse(undefined)
+                  |------------------|
+                  finalHandler(undefined)
+                  |------------------|
+</pre>
+
+### Задача #3
+{% highlight javascript %}
+doSomething().then(doSomethingElse())
+    .then(finalHandler);
+{% endhighlight %}
+
+Ответ:
+
+<pre class="mono">
+doSomething
+|-----------------|
+doSomethingElse(undefined)
+|---------------------------------|
+                  finalHandler(resultOfDoSomething)
+                  |------------------|
+</pre>
+
+### Задача #4
+{% highlight javascript %}
+doSomething().then(doSomethingElse)
+    .then(finalHandler);
+{% endhighlight %}
+
+Ответ:
+
+<pre class="mono">
+doSomething
+|-----------------|
+                  doSomethingElse(resultOfDoSomething)
+                  |------------------|
+                                     finalHandler(resultOfDoSomethingElse)
+                                     |------------------|
+</pre>
+
+
+
+If these answers still don't make sense, then I encourage you to re-read the post,
+ or to define the doSomething() and doSomethingElse() methods and try it out yourself in your browser.
+
+And for more advanced uses of promises, check out my promise protips cheat sheet.
+
+## Последнее слово про обещания
+Обещания великолепны. Если вы всё ещё используете коллбэки, я
+настоятельно рекомендую вам переключиться на обещания. Ваш код станет
+меньше, более элегантным и более простым для рассуждения о нём.
+
+Если вы всё ещё мне не верите, вот доказательство: рефакторинг модуля
+map/reduce в PouchDB, чтобы перейти с коллбэков на
+обещания. Результат: 290 вставок, 555 удалений.
+
+Внезапно, человек, который написал этот грязный код на коллбэках оказался... мной!
+Это послужило мне первым уроком мощи обещаний, и я благодарю других контрибьюторов PouchDB
+за то, что направляли меня по дороге.
+
+Конечно, обещания не идеальны. Это правда, что они лучше чем коллбэки, но это всё равно
+что сказать, что удар в живот лучше пинка в зубы. Да, одно предпочтительнее другого,
+но будь у вас выбор, лучше избежать и того, и другого.
+
+И хотя они лушче коллбэков, обещания всё равно трудны для понимания и подвержены ошибкам,
+о чём свидетельствует то, что я счёл необходимым написать этот пост. Новички и эксперты
+одинаково постоянно допускают ошибки, и, честно говоря, это не их вина. Проблема в том,
+что обещания хоть и ближе к паттернам, которые мы используем в синхронном коде,
+являются хорошей заменой, но всё-таки не одинаковы.
+
+В идеале, вы не должны быть обязанными выучить кучу неясных правил и новых API чтобы
+делать то, что в синхронном мире замечательно делается при помощи `return`, `catch`,
+`throw` и циклов `for`. Не должно быть двух параллельных систем, которые надо всё время
+держать в голове.
+
+## Ждём `async`/`await`
+
+Это то, что я показал в статье "Taming the asynchronous beast with ES7", где я исследовал
+ключевые слова `async`/`await` из ES7 и как они глубже интегрируют обещания в язык.
+Вместо того, чтобы писать псевдо-синхронный код (с фейковым `catch()`, который похож
+на `catch`, но не слишком), в ES7 мы сможем использовать настоище
+`try`/`catch`/`return`, точь-в-точь как мы научились на первом курсе.
+
+This is a huge boon to JavaScript as a language. Because in the end, these promise
+anti-patterns will still keep cropping up, as long as our tools don't tell us when
+we're making a mistake.
+
+To take an example from JavaScript's history, I think it's fair to say that JSLint
+and JSHint did a greater service to the community than JavaScript: The Good Parts,
+even though they effectively contain the same information. It's the difference between
+being told exactly the mistake you just made in your code, as opposed to reading
+a book where you try to understand other people's mistakes.
+
+The beauty of ES7 async/await is that, for the most part, your mistakes will reveal
+themselves as syntax/compiler errors rather than subtle runtime bugs. Until then,
+though, it's good to have a grasp of what promises are capable of, and how to use
+them properly in ES5 and ES6.
+
+So while I recognize that, like JavaScript: The Good Parts, this blog post can only
+have a limited impact, it's hopefully something you can point people to when you see
+them making these same mistakes. Because there are still way too many of us who just
+need to admit: "I have a problem with promises!"
