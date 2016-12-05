@@ -199,18 +199,18 @@ UI гитхаба в курсе этого правила и предупреж�
 Здесь ничего сложного. Начинайте заголовок с прописной (заглавной, большой) буквы.
 
 Например:
-<span style="color:green">- Accelerate to 88 miles per hour</span>
+<div style="color:green">- Accelerate to 88 miles per hour</div>
 А не
-<span style="color:red">- accelerate to 88 miles per hour</span>
+<div style="color:red">- accelerate to 88 miles per hour</div>
 
 ### 4. Не ставьте точку в конце заголовка
 
 Завершающие знаки препинания не важны в заголовке, а вот место имеет значение, когда вы пытаетесь уложиться в 50 символов.
 
 Например
-<span style="color:green">- Open the pod bay doors</span>
+<div style="color:green">- Open the pod bay doors</div>
 Вместо
-<span style="color:red">- Open the pod bay doors.</span>
+<div style="color:red">- Open the pod bay doors.</div>
 
 ### 5. Используйте повелительное наклонение
 
@@ -240,20 +240,20 @@ UI гитхаба в курсе этого правила и предупреж�
 
 Так что когда вы пишите сообщение коммита в повелительном наклонении, вы следуете внутреннему соглашению гита:
 
-<span style="color:green">- Refactor subsystem X for readability</span>
-<span style="color:green">- Update getting started documentation</span>
-<span style="color:green">- Remove deprecated methods</span>
-<span style="color:green">- Release version 1.0.0</span>
+<div style="color:green">- Refactor subsystem X for readability</div>
+<div style="color:green">- Update getting started documentation</div>
+<div style="color:green">- Remove deprecated methods</div>
+<div style="color:green">- Release version 1.0.0</div>
 
 Сначала писать так может быть неловко. Обычно мы используем *изъявительное* наклонение (оно сообщает о фактах) и поэтому сообщения к коммитам выглядят так:
 
-<span style="color:red">- Fixed bug with Y</span>
-<span style="color:red">- Changing behavior of X</span>
+<div style="color:red">- Fixed bug with Y</div>
+<div style="color:red">- Changing behavior of X</div>
 
 Иногда описывается их содержимое
 
-<span style="color:red">- More fixes for broken stuff</span>
-<span style="color:red">- Sweet new API methods</span>
+<div style="color:red">- More fixes for broken stuff</div>
+<div style="color:red">- Sweet new API methods</div>
 
 Чтобы избежать недоразумений, есть простое правило:
 
