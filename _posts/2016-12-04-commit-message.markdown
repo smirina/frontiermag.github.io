@@ -247,13 +247,13 @@ UI гитхаба в курсе этого правила и предупреж�
 
 Сначала писать так может быть неловко. Обычно мы используем *изъявительное* наклонение (оно сообщает о фактах) и поэтому сообщения к коммитам выглядят так:
 
-<span style="color:red>- Fixed bug with Y</span>
-<span style="color:red>- Changing behavior of X</span>
+<span style="color:red">- Fixed bug with Y</span>
+<span style="color:red">- Changing behavior of X</span>
 
 Иногда описывается их содержимое
 
-<span style="color:red>- More fixes for broken stuff</span>
-<span style="color:red>- Sweet new API methods</span>
+<span style="color:red">- More fixes for broken stuff</span>
+<span style="color:red">- Sweet new API methods</span>
 
 Чтобы избежать недоразумений, есть простое правило:
 
