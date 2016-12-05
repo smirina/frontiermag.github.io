@@ -60,17 +60,13 @@ title: Как писать сообщения коммитов
 
 Чтобы создать полезную историю изменений, подход команды к сообщениям коммитов не должен отличаться - стоит согласовать, как минимум, три вещей:
 
-
 **Стиль.** Синтаксис разметки, отступы, грамматика, прописные буквы, пунктуация. Пропишите все это, даже то, что кажется очевидным (вам), и сделайте максимально простым. Тогда у вас будет согласованный лог, который *действительно читают*.
 
-
 **Контент.** Какая информация должна быть в теле коммита (если оно есть)? А какая не должна?
-
 
 **Метаданные.** Как следует ссылаться на ишьи, пуллреквесты и тому подобное?
 
 К счастью, существуют устоявшиеся соглашения относительно того, что делает сообщение коммита хорошим. Некоторые подкомманды гита предполагают, что ты следуешь части этих правил. Не нужно изобретать велосипед. Просто следуйте этим семи правилам и станьте ближе к тому, чтобы коммитить как профессионал.
-
 
 > Не забывайте,
 [все](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
@@ -80,7 +76,6 @@ title: Как писать сообщения коммитов
 [сказано](https://github.com/erlang/otp/wiki/writing-good-commit-messages)
 [раньше](https://github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages)
 
-
 1. Отделяйте заголовок от содержимого коммита пустой строкой
 2. Уложите заголовок в 50 символов
 3. Пишите заголовок с заглавной буквы
@@ -89,12 +84,9 @@ title: Как писать сообщения коммитов
 1. Ограничьте длину строк в сообщении 72 символами
 1. В сообщении пишите что и почему сделано, а не как
 
-
 Например:
 
-
     Обобщите изменения используя меньше 50 символов.
-
 
     Более подробные объяснения, если они нужны. Длина строки - примерно 72 символа. В некоторых случаях первая строчка рассматривается как заголовок коммита, а все остальное - как тело. Эта пустая строка имеет решающее значение - иначе, если вы напишете их слитно, такие инструменты как log, shortlog и rebase могут сработать неправильно.
 
@@ -191,178 +183,147 @@ title: Как писать сообщения коммитов
 
 UI гитхаба в курсе этого правила и предупреждает вас, если вы превышаете лимит.
 
-![http://i.imgur.com/zyBU2l6.png]()
+![screenshot](http://i.imgur.com/zyBU2l6.png)
 
 И переносит текст дальше 69 символов за многоточие.
 
-
-//скриншот
-
+![screenshot](http://i.imgur.com/27n9O8y.png)
 
 Так что ориентируйтесь на 50 символов, но не выходите за 69
 
-
-3. Пишите заголовок с заглавной буквы
-
+### 3. Пишите заголовок с заглавной буквы
 
 Здесь ничего сложного. Начинайте заголовок с прописной (заглавной, большой) буквы.
 
-
 Например:
-Accelerate to 88 miles per hour
+<span style="color:green">- Accelerate to 88 miles per hour</span>
 А не
-accelerate to 88 miles per hour
+<span style="color:red">- accelerate to 88 miles per hour</span>
 
-
-4. Не ставьте точку в конце заголовка
-
+### 4. Не ставьте точку в конце заголовка
 
 Завершающие знаки препинания не важны в заголовке, а вот место имеет значение, когда вы пытаетесь уложиться в 50 символов.
 
-
 Например
-Open the pod bay doors
+<span style="color:green">- Open the pod bay doors</span>
 Вместо
-Open the pod bay doors.
+<span style="color:red">- Open the pod bay doors.</span>
 
+### 5. Используйте повелительное наклонение
 
-
-
-5. Используйте повелительное наклонение
-
-
-Повелительное наклонение - это когда “говорящий или пишущий дает команду или инструкцию”.
-
+*Повелительное наклонение* - это когда “говорящий или пишущий дает команду или инструкцию”.
 
 Например
-Уберись в комнате
-Закройте дверь
-Вынеси мусор
-
+- Уберись в комнате
+- Закройте дверь
+- Вынеси мусор
 
 Все семь правил, которые вы сейчас читаете, написаны в повелительном наклонении (“Используйте повелительное наклонение”, и т.п.).
 
+Это может звучать немного грубо, поэтому обычно мы так не говорим. Но это именно то, что нужно для заголовка коммита. Одна из причин - **гит сам использует повелительное наклонение, когда создает коммит от вашего имени**.
 
-Оно может звучать немного грубо, поэтому обычно мы так не говорим. Но это именно то, что нужно для заголовка коммита. Одна из причин - гит сам использует повелительное наклонение, когда создает коммит от вашего имени.
+Например, по умолчанию при `git merge` сообщение выглядит так
 
+    Merge branch 'myfeature'
 
-Например, по умолчанию при git merge сообщение выглядит так
+а при `git revert`
 
-
-//скриншот Merge branch 'myfeature'
-
-
-а при git revert
-
-
-Revert "Add the thing with the stuff"
-This reverts commit cc87791524aedd593cff5a74532befe7ab69ce9d.
-
+    Revert "Add the thing with the stuff"
+    This reverts commit cc87791524aedd593cff5a74532befe7ab69ce9d.
 
 или при клике на кнопку “Merge” в пуллреквесте гитхаба
 
-
-Merge pull request #123 from someuser/somebranch
-
+    Merge pull request #123 from someuser/somebranch
 
 Так что когда вы пишите сообщение коммита в повелительном наклонении, вы следуете внутреннему соглашению гита:
 
+<span style="color:green">- Refactor subsystem X for readability</span>
+<span style="color:green">- Update getting started documentation</span>
+<span style="color:green">- Remove deprecated methods</span>
+<span style="color:green">- Release version 1.0.0</span>
 
-Refactor subsystem X for readability
-Update getting started documentation
-Remove deprecated methods
-Release version 1.0.0
+Сначала писать так может быть неловко. Обычно мы используем *изъявительное* наклонение (оно сообщает о фактах) и поэтому сообщения к коммитам выглядят так:
 
-
-Сначала писать так может быть неловко. Обычно мы используем изъявительное наклонение (оно сообщает о фактах) и поэтому сообщения к коммитам выглядят так:
-
-
-Fixed bug with Y
-Changing behavior of X
-
+<span style="color:red>- Fixed bug with Y</span>
+<span style="color:red>- Changing behavior of X</span>
 
 Иногда описывается их содержимое
 
-
-More fixes for broken stuff
-Sweet new API methods
-
+<span style="color:red>- More fixes for broken stuff</span>
+<span style="color:red>- Sweet new API methods</span>
 
 Чтобы избежать недоразумений, есть простое правило:
 
-
-Правильно сформулированным заголовком коммита всегда можно продолжить фразу
-If applied, this commit will (и здесь заголовок коммита)
-
-
+**Правильно сформулированным заголовком коммита всегда можно продолжить фразу:**
+- If applied, this commit will (и здесь заголовок коммита)
 
 Например
 
-
-If applied, this commit will refactor subsystem X for readability
-If applied, this commit will update getting started documentation
-If applied, this commit will remove deprecated methods
-If applied, this commit will release version 1.0.0
-If applied, this commit will merge pull request #123 from user/branch
-
+- If applied, this commit will <span style="color:green">refactor subsystem X for readability</span>
+- If applied, this commit will <span style="color:green">update getting started documentation</span>
+- If applied, this commit will <span style="color:green">remove deprecated methods</span>
+- If applied, this commit will <span style="color:green">release version 1.0.0</span>
+- If applied, this commit will <span style="color:green">merge pull request #123 from user/branch</span>
 
 А с другим наклонением уже не работает:
-
 
 If applied, this commit will fixed bug with Y
 If applied, this commit will changing behavior of X
 If applied, this commit will more fixes for broken stuff
 If applied, this commit will sweet new API methods
 
+>На заметку: повелительное наклонения важно только в заголовке. В теле пишите так, как удобнее
 
-На заметку: повелительное наклонения важно только в заголовке. В теле пишите так, как удобнее
-
-
-6. Ограничьте длину строки сообщения 72 символами
-
+### 6. Ограничьте длину строки сообщения 72 символами
 
 Git никак не форматирует сообщения автоматически, поэтому не забывайте про правый край и переносите строки вручную. Совет - остановиться на 72 символах, чтобы оставить гиту достаточно места для индентации и не превысить, в конечном счете, 80 знаков.
 
+Тут поможет хороший текстовый редактор. Легко настроить, например, Vim, который будет ограничивать длину строки сообщения. А IDE традицинно плохо справляются с автоматическим форматированием текста (хотя в IntelliJ IDEA в последних версиях, наконец, [стало](https://youtrack.jetbrains.com/issue/IDEA-53615) [получше](https://youtrack.jetbrains.com/issue/IDEA-53615#comment=27-448299) [с этим](https://youtrack.jetbrains.com/issue/IDEA-53615#comment=27-446912)).
 
-Тут поможет хороший текстовый редактор. Легко настроить, например, Vim, который будет ограничивать длину строки сообщения. А IDE традицинно плохо справляются с автоматическим форматированием текста (хотя в IntelliJ IDEA в последних версиях, наконец, стало https://youtrack.jetbrains.com/issue/IDEA-53615 получше https://youtrack.jetbrains.com/issue/IDEA-53615#comment=27-448299 с этим https://youtrack.jetbrains.com/issue/IDEA-53615#comment=27-446912 )
+###7. В сообщении пишите что и почему сделано, а не как
 
+Этот [коммит из Bitcoin Core](https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6) отличный пример объяснения, что и почему изменилось.
 
-7. В сообщении пишите что и почему сделано, а не как
+    commit eb0b56b19017ab5c16c745e6da39c53126924ed6
+    Author: Pieter Wuille <pieter.wuille@gmail.com>
+    Date:   Fri Aug 1 22:57:55 2014 +0200
 
+       Simplify serialize.h's exception handling
 
-Этот коммит из Bitcoin Core (https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6) отличный пример объяснения, что и почему изменилось.
+       Remove the 'state' and 'exceptmask' from serialize.h's stream
+       implementations, as well as related methods.
 
+       As exceptmask always included 'failbit', and setstate was always
+       called with bits = failbit, all it did was immediately raise an
+       exception. Get rid of those variables, and replace the setstate
+       with direct exception throwing (which also removes some dead
+       code).
 
-//скриншот/код
+       As a result, good() is never reached after a failure (there are
+       only 2 calls, one of which is in tests), and can just be replaced
+       by !eof().
 
+       fail(), clear(n) and exceptions() are just never called. Delete
+       them.
 
-Посмотрите дифф целиком https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6 и только подумайте, сколько времени автор сэкономил текущим и будущим разработчикам, потратив время, чтобы объяснить контекст здесь и сейчас. Не сделай он этого, мы могли бы этого никогда и не понять.
-
+Посмотрите [дифф целиком](https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6) и только подумайте, сколько времени автор сэкономил текущим и будущим разработчикам, потратив время, чтобы объяснить контекст здесь и сейчас. Не сделай он этого, мы могли бы этого никогда и не понять.
 
 В большинстве случаев вы можете объяснить, почему было сделано изменение. Код требует пояснений (а сложный код - комментариев внутри). Сфокусируйтесь на том, почему вы сделали эти изменения, в первую очередь - как все работало до изменений (и что с этим было не так), как работает сейчас и почему вы решили исправить это именно так.
 
-
 Возможно, будущим мейнтейнером, благодарным за это, станете вы сами!
 
+###Советы
 
-Советы
+##Полюбите командную строку. Расстаньтесь с IDE.
 
-
-Полюбите командную строку. Расстаньтесь с IDE.
 По многим причинам, среди которых подкоманды гита, подружиться с командной строкой - мудрое решение. Git безумно мощный, IDE - тоже, но каждый по своему. Я использую одну IDE каждый день (IntelliJ IDEA) и использовал другие (Eclipse), но я никогда не видел такой интеграции IDE и гита, которая по простоте и мощности приблизилась бы к командной строке (как только вы с ней подружитесь).
 
-
-Некоторые связанные с гитом возможности IDE бесценны, вроде вызова git rm при удалении файла или правильной работы с гитом при переименовании. Но все разваливается, когда вы начинаете коммитить, мержить, ребейзить или делать сложный анализ истории изменений через IDE.
-
+Некоторые связанные с гитом возможности IDE бесценны, вроде вызова `git rm` при удалении файла или правильной работы с гитом при переименовании. Но все разваливается, когда вы начинаете коммитить, мержить, ребейзить или делать сложный анализ истории изменений через IDE.
 
 Когда дело доходит до полноценного использования всех возможностей гита - нужна командная строка.
-https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
 
+Помните, что если вы используете bash или zsh, то существуют [скрипты автодополнения](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks), благодаря которым не надо запоминать все подкомманды и флаги.
 
-Помните, что если вы используете bash или zsh, то существуют скрипты автодополнения, благодаря которым не надо запоминать все подкомманды и флаги.
+##Прочитайте Pro Git 
 
-
-Прочитайте Pro Git
-
-
-Книгу Pro Git (https://git-scm.com/book/ru/v2) можно бесплатно прочитать онлайн. Воспользуйтесь этим!
+Книгу [Pro Git](https://git-scm.com/book/ru/v2) можно бесплатно прочитать онлайн. Воспользуйтесь этим!
