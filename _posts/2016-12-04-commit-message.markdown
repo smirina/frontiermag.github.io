@@ -5,7 +5,7 @@ tag: git
 original: http://chris.beams.io/posts/git-commit/
 title: Как писать сообщения коммитов
 author: "Крис Бимс"
-translator: "Ирина Нитченко"
+translator: "Ирина Смышляева"
 
 ---
 <a href='http://xkcd.com/1296/'><img src='http://imgs.xkcd.com/comics/git_commit.png' alt='xkcd: git commit'/></a>
