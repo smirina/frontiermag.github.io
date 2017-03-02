@@ -192,7 +192,7 @@ function outOfStockProductIds(state) {
 
  // selector
  function outOfStockProductIds(state) {
-  !! не забыть вставить сюда кусок!
+  return _.keys(_.pickBy(state.productsById, (product) => product.outOfStock)); 
  }
 ```
 
